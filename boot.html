@@ -1,0 +1,2588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!-- navbar start -->
+  <nav class="navbar navbar-expand-lg text-center">
+    <div class="container-xl">
+      <!-- navbar left content -->
+      <a class="navbar-brand" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="98" height="24" viewBox="0 0 98 24" fill="none">
+          <g clip-path="url(#clip0_0_809)">
+            <path
+              d="M0 7.50319C0 6.32826 0.973914 5.41891 2.14217 5.41891H3.11609C3.19361 5.41891 3.31043 5.41891 3.3885 5.45662C4.94654 2.23566 8.64621 0 12.9693 0C17.293 0 20.9927 2.23566 22.5119 5.41891H23.4853C24.6929 5.41891 25.6275 6.36597 25.6275 7.50319V9.89023C25.6275 11.0652 24.6536 11.9745 23.4853 11.9745H22.5507C21.2263 14.7031 18.2663 16.7491 14.6835 17.242V19.5154C15.4232 19.9324 15.9298 20.6903 15.9298 21.5997C15.9298 22.926 14.8391 23.9873 13.4759 23.9873C12.1128 23.9873 11.022 22.926 11.022 21.5997C11.022 20.728 11.5287 19.9324 12.2684 19.5154V17.3557C8.25698 17.0901 4.90724 14.9681 3.46656 11.9745C3.3885 11.9745 3.27167 12.0122 3.19361 12.0122H2.22024C1.01267 12.0122 0.078064 11.0652 0.078064 9.92847V7.50319H0Z"
+              fill="#045AFD" />
+            <path d="M89.2392 20.8258V20.5667H89.2651V20.8258H89.2392Z" fill="#1E1E1E" />
+            <path
+              d="M88.8991 6.68066C89.5149 6.68066 90.0589 6.73127 90.5313 6.83248L90.2529 8.93271C89.7384 8.81463 89.2365 8.75559 88.7473 8.75559C88.0135 8.75559 87.3303 8.95802 86.6977 9.36288C86.0735 9.76775 85.5843 10.3286 85.2301 11.0456C84.8758 11.7541 84.6987 12.5427 84.6987 13.4115V20.8256H82.4213V6.9337H84.2938L84.5469 9.47675H84.6481C85.1795 8.55737 85.8078 7.86151 86.5332 7.38917C87.2586 6.91683 88.0472 6.68066 88.8991 6.68066Z"
+              fill="#1E1E1E" />
+            <path
+              d="M79.8798 6.68066C80.4955 6.68066 81.0395 6.73127 81.5119 6.83248L81.2335 8.93271C80.719 8.81463 80.2172 8.75559 79.728 8.75559C78.9941 8.75559 78.3109 8.95802 77.6783 9.36288C77.0542 9.76775 76.565 10.3286 76.2107 11.0456C75.8564 11.7541 75.6793 12.5427 75.6793 13.4115V20.8256H73.402V6.9337H75.2745L75.5275 9.47675H75.6287C76.1601 8.55737 76.7885 7.86151 77.5139 7.38917C78.2392 6.91683 79.0279 6.68066 79.8798 6.68066Z"
+              fill="#1E1E1E" />
+            <path
+              d="M61.2196 6.93384V15.8788C61.2196 17.0006 61.4684 17.8356 61.9661 18.3839C62.4722 18.9237 63.2524 19.1936 64.3067 19.1936C65.7321 19.1936 66.7696 18.7972 67.4191 18.0043C68.0686 17.2114 68.3933 15.9336 68.3933 14.1707V6.93384H70.6833V20.8257H68.8108L68.4819 18.9911H68.368C67.9547 19.6575 67.3685 20.172 66.6094 20.5347C65.8502 20.8974 64.9688 21.0787 63.9651 21.0787C62.295 21.0787 61.034 20.6781 60.1821 19.8768C59.3387 19.0755 58.9169 17.7934 58.9169 16.0306V6.93384H61.2196Z"
+              fill="#1E1E1E" />
+            <path
+              d="M56.0338 19.2188C56.329 19.2188 56.6748 19.1893 57.0713 19.1302C57.4677 19.0712 57.7671 19.0037 57.9696 18.9278V20.6738C57.7587 20.7665 57.4297 20.8551 56.9827 20.9395C56.5441 21.0322 56.0971 21.0786 55.6416 21.0786C52.9256 21.0786 51.5676 19.6489 51.5676 16.7896V8.70495H49.6066V7.61688L51.5929 6.70593L52.5039 3.74536H53.8577V6.93367H57.8683V8.70495H53.8577V16.7263C53.8577 17.5276 54.0474 18.1434 54.427 18.5735C54.815 19.0037 55.3506 19.2188 56.0338 19.2188Z"
+              fill="#1E1E1E" />
+            <path
+              d="M39.2082 6.93384V15.8788C39.2082 17.0006 39.457 17.8356 39.9546 18.3839C40.4607 18.9237 41.2409 19.1936 42.2952 19.1936C43.7207 19.1936 44.7582 18.7972 45.4076 18.0043C46.0571 17.2114 46.3818 15.9336 46.3818 14.1707V6.93384H48.6718V20.8257H46.7994L46.4704 18.9911H46.3565C45.9432 19.6575 45.357 20.172 44.5979 20.5347C43.8388 20.8974 42.9574 21.0787 41.9536 21.0787C40.2836 21.0787 39.0226 20.6781 38.1707 19.8768C37.3272 19.0755 36.9055 17.7934 36.9055 16.0306V6.93384H39.2082Z"
+              fill="#1E1E1E" />
+            <path
+              d="M36.2111 8.70507H32.7065V20.8257H30.4292V8.70507H28V7.6423L30.4292 6.85788V6.0608C30.4292 4.37387 30.7961 3.10867 31.5299 2.2652C32.2722 1.42173 33.4108 1 34.9459 1C35.8316 1 36.7299 1.15604 37.6408 1.46812L37.0335 3.25206C36.2491 2.99902 35.5617 2.8725 34.9713 2.8725C34.2037 2.8725 33.6344 3.12554 33.2632 3.63162C32.8921 4.1377 32.7065 4.93899 32.7065 6.0355V6.93379H36.2111V8.70507Z"
+              fill="#1E1E1E" />
+            <path
+              d="M15.4901 6.04224H17.0869C17.8266 6.04224 18.45 6.64829 18.45 7.36855V10.1348C18.45 10.8546 17.8266 11.4611 17.0869 11.4611H15.4901C14.7498 11.4611 14.1269 10.8546 14.1269 10.1348V7.36855C14.1269 6.64829 14.7111 6.04224 15.4901 6.04224Z"
+              fill="white" />
+            <path
+              d="M8.67431 6.04224H10.2711C11.0108 6.04224 11.6343 6.64829 11.6343 7.36855V10.1348C11.6343 10.8546 11.0108 11.4611 10.2711 11.4611H8.67431C7.93405 11.4611 7.31116 10.8546 7.31116 10.1348V7.36855C7.31116 6.64829 7.93405 6.04224 8.67431 6.04224Z"
+              fill="white" />
+            <path
+              d="M97 8C97 9.10457 96.1046 10 95 10C93.8954 10 93 9.10457 93 8C93 6.89543 93.8954 6 95 6C96.1046 6 97 6.89543 97 8Z"
+              fill="white" />
+            <path
+              d="M94.559 8.01392H94.9392C95.1453 8.01392 95.2957 7.97341 95.3906 7.89239C95.4855 7.81137 95.533 7.691 95.533 7.53128C95.533 7.37156 95.485 7.25524 95.3889 7.18232C95.2928 7.10825 95.1372 7.07121 94.9219 7.07121H94.559V8.01392ZM94.559 8.28475V9.33336H94.2396V6.79517H94.9392C95.2541 6.79517 95.4867 6.85535 95.6372 6.97572C95.7888 7.09494 95.8646 7.27491 95.8646 7.51566C95.8646 7.85246 95.695 8.07931 95.3559 8.19621L96.0521 9.33336H95.6788L95.0642 8.28475H94.559Z"
+              fill="black" />
+            <path
+              d="M95 10.1501C96.1874 10.1501 97.15 9.18751 97.15 8.0001C97.15 6.81269 96.1874 5.8501 95 5.8501C93.8126 5.8501 92.85 6.81269 92.85 8.0001C92.85 9.18751 93.8126 10.1501 95 10.1501Z"
+              stroke="black" stroke-width="0.3" />
+          </g>
+          <defs>
+            <clipPath id="clip0_0_809">
+              <rect width="98" height="24" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mt-2" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Rankings">Rankings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#Bookmarks">Bookmarks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#Categories">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#GPT-Plugins">GPT Plugins</a>
+          </li>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle nav-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Show More
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Subscribe</a></li>
+              <li><a class="dropdown-item" href="#">Resources</a></li>
+            </ul>
+          </div>
+        </ul>
+        <!-- navbar right content-->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-right">
+
+          <li class="nav-item">
+            <a class="nav-link active border rounded-pill google-img" href="">
+              <img src="./img/image 29.png" alt="">
+              Sign in with Google
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active border bg-black text-white rounded-pill" href="">Submit Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active border rounded-pill" href=""><svg xmlns="http://www.w3.org/2000/svg" width="22"
+                height="20" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M11.3808 2.01904C9.91585 3.38786 9.00012 5.33708 9.00012 7.50018C9.00012 11.6423 12.358 15.0002 16.5001 15.0002C18.6632 15.0002 20.6124 14.0844 21.9812 12.6195C21.6614 17.8539 17.315 22.0002 12.0001 22.0002C6.47727 22.0002 2.00012 17.523 2.00012 12.0002C2.00012 6.68532 6.14641 2.33888 11.3808 2.01904Z"
+                  fill="black" />
+              </svg></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active border rounded-pill" href="">EN</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
+  <!-- main box start -->
+  <div class="container-xl main-box border rounded-4">
+    <div class="container-xl my-5 text-center ">
+      <h3>Discover the latest and most powerful AI resources in one place.</h3>
+      <p>We curate, review, and AI resources, making your selection process effortless.</p>
+    </div>
+    <div class="container-xl my-5 d-flex main-boxes flex-row flex-wrap">
+      <div class="d-flex flex-column flex-lg-row col-lg-6 text-center text-lg-start">
+        <div>
+          <img class="border-0 rounded-circle m-3" src="./img/robot-hand 1.png" alt="">
+        </div>
+        <div class="mx-4">
+          <h4>Explore the Universe of AI</h5>
+            <p>Dive into our comprehensive hub and navigate through a curated collection of AI tools, products, and
+              resources tailored for developers, businesses, and AI enthusiasts.</p>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-lg-row col-lg-6 text-center text-lg-start">
+        <div>
+          <img class="border-0 rounded-circle m-3" src="./img/robot-hand-with-ai-chip 1.png" alt="">
+        </div>
+        <div class="mx-4">
+          <h5>Engage in Community Threads</h5>
+          <p>Engage in product threads where you can ask questions and receive answers from ai experts and enthusiasts
+            in the community. </p>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-lg-row  col-lg-6 text-center text-lg-start">
+        <div>
+          <img class="border-0 rounded-circle m-3" src="./img/robot-and-human-handshake 1.png" alt="">
+        </div>
+        <div class="mx-4">
+          <h5>Shape the Future of AI</h5>
+          <p>Join the movement! Contribute to and leverage community-driven insights, trends, and future directions in
+            AI, derived from vast data sources.</p>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-lg-row col-lg-6 text-center text-lg-start">
+        <div>
+          <img class="border-0 rounded-circle m-3" src="./img/innovations 1.png" alt="">
+        </div>
+        <div class="mx-4">
+          <h5>Find and Compare AI resources</h5>
+          <p>Easily discover and bookmark the perfect resources for your tasks using our advanced search, ranking tool
+            and top picks .</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- main box end -->
+  <!-- Search Box Start -->
+      <div class="d-flex flex-wrap my-5 flex-column flex-lg-row justify-content-between container-lg px-5 ">  
+        <div class="m-2">
+          <h5>Search</h5>
+          <div class="bg-drak d-flex border px-1 py-2 rounded"><img src="./img/search-line (6) 1.png" style="height: 20px;"
+              alt=""><input class="border border-0 px-2" style="width: 100%;" type="text" placeholder="Search AI"></div>
+        </div>
+        <div class="m-2">
+          <h5>Categories</h5>
+          <div class="align-self-end ">
+            <select name="" id="" class="border px-3 py-2 rounded  w-100">
+              <option value="Chose Categories">Chose Categories</option>
+              <option value="Categories-1">Categories-1</option>
+              <option value="Categories-2">Categories-2</option>
+            </select>
+          </div>
+        </div>
+        <div class="m-2">
+          <h5>Sort</h5>
+          <div class=" align-self-end">
+            <select name="" id="" class="border px-3 py-2 rounded w-100">
+              <option value="default">Default</option>
+              <option value="option-1">Option-1</option>
+              <option value="option-2">Option-2</option>
+            </select>
+          </div>
+        </div>
+        <div class="m-2">
+          <h5>Pricing</h5>
+          <div class="align-self-end">
+            <select name="" id="" class="border rounded px-3 py-2 w-100">
+              <option value="all">All</option>
+              <option value="price-1">Price-1</option>
+              <option value="price-2">Price-2</option>
+            </select>
+          </div>
+        </div>
+        <div class="bg-black align-self-end p-2 border my-2 rounded">
+          <a href="">
+            <img src="./img/equalizer-line (2) 1.png">
+          </a>
+        </div>
+      </div>
+  <!-- Search Box End -->
+  <!-- Cards Start -->
+  <!-- Trending Tool Cards Start -->
+  <!-- Trending Tool Heading-->
+      <div class="container-lg d-flex justify-content-sm-between justify-content-evenly px-3 heading">
+        <h4>Trending Tools <span class="text-secondary">(351)</span> </h4>
+        <a class="text-primary px-3 fw-bold" href="">See all</a>
+      </div>
+  <!-- Trending Tool Cards-->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" >
+                      <div class="d-flex flex-wrap justify-content-around justify-content-sm-between container-lg w-100">
+                        <div class="card rounded-4 my-3" style="width: 19rem;">
+                          <img src="./img/Rectangle 14.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+
+                            <!-- card title -->
+
+                            <div class="card-title d-flex align-items-center">
+                              <!-- Card title left -->
+                              <div>
+                                <a href="" class="border me-auto rounded py-2 px-3">Fremium</a>
+                              </div>
+                              <!-- Card title right -->
+                              <div class="d-flex ms-auto align-items-center">
+                                <a href="" class="mx-1">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="36" viewBox="0 0 42 42" fill="none">
+                                    <rect x="0.5" y="0.5" width="41" height="41" rx="7.5" fill="white" stroke="#D9D9D9" />
+                                    <path
+                                      d="M14.8454 12H26.6816C27.1485 12 27.527 12.3731 27.527 12.8333V28.7861C27.527 29.0162 27.3377 29.2028 27.1043 29.2028C27.0249 29.2028 26.9471 29.1807 26.8798 29.1391L20.7635 25.3594L14.6473 29.1391C14.4495 29.2613 14.1886 29.2024 14.0646 29.0074C14.0224 28.9411 14 28.8644 14 28.7861V12.8333C14 12.3731 14.3785 12 14.8454 12ZM25.8362 13.6667H15.6909V26.527L20.7635 23.3923L25.8362 26.527V13.6667Z"
+                                      fill="#1E1E1E" />
+                                  </svg>
+                                </a>
+
+                                <a href="" class="d-flex mx-1 p-1 align-items-center border rounded">
+                                  <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                                      <path
+                                        d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                                        fill="#FF6969" />
+                                    </svg>
+                                  </div>
+                                  <div>
+                                    <p class="m-1">221</p>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+
+                            <!-- card text -->
+
+                            <div class="card-text">
+                              <div class="d-flex text-center">
+                                <h5>TheToolBus</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                  <path
+                                    d="M8.0154 0.145629C6.61978 -0.30616 5.1026 0.322268 4.43518 1.62862L3.63281 3.19911C3.53748 3.38572 3.38572 3.53748 3.19911 3.63281L1.62862 4.43518C0.322268 5.1026 -0.30616 6.61978 0.145629 8.0154L0.68878 9.69327C0.753316 9.89262 0.753316 10.1073 0.68878 10.3067L0.145629 11.9845C-0.30616 13.3802 0.322268 14.8973 1.62862 15.5648L3.19911 16.3671C3.38572 16.4625 3.53748 16.6142 3.63281 16.8009L4.43518 18.3714C5.1026 19.6777 6.61978 20.3062 8.0154 19.8544L9.69327 19.3112C9.89262 19.2467 10.1073 19.2467 10.3067 19.3112L11.9845 19.8544C13.3802 20.3062 14.8973 19.6777 15.5648 18.3714L16.3671 16.8009C16.4625 16.6142 16.6142 16.4625 16.8009 16.3671L18.3714 15.5648C19.6777 14.8973 20.3062 13.3802 19.8544 11.9845L19.3112 10.3067C19.2467 10.1073 19.2467 9.89262 19.3112 9.69327L19.8544 8.0154C20.3062 6.61978 19.6777 5.1026 18.3714 4.43518L16.8009 3.63281C16.6142 3.53748 16.4625 3.38572 16.3671 3.19911L15.5648 1.62862C14.8973 0.322268 13.3802 -0.30616 11.9845 0.145629L10.3067 0.68878C10.1073 0.753306 9.89262 0.753316 9.69327 0.68878L8.0154 0.145629ZM4.78192 9.7583L6.19015 8.34998L9.00659 11.1665L14.6395 5.5336L16.0478 6.94183L9.00659 13.9829L4.78192 9.7583Z"
+                                    fill="#1C92FF" />
+                                </svg>
+                              </div>
+                              <p>AssetsAI is an AI-powered tool that offers bespoke game assets in a variety...</p>
+                            </div>
+                            <div class="card-button d-flex justify-content-between">
+                              <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card rounded-4 my-3" style="width: 19rem;">
+                          <img src="./img/Rectangle 14.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+
+                            <!-- card title -->
+
+                            <div class="card-title d-flex align-items-center">
+                              <!-- Card title left -->
+                              <div>
+                                <a href="" class="border me-auto rounded py-2 px-3">Fremium</a>
+                              </div>
+                              <!-- Card title right -->
+                              <div class="d-flex ms-auto align-items-center">
+                                <a href="" class="mx-1">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="36" viewBox="0 0 42 42" fill="none">
+                                    <rect x="0.5" y="0.5" width="41" height="41" rx="7.5" fill="white" stroke="#D9D9D9" />
+                                    <path
+                                      d="M14.8454 12H26.6816C27.1485 12 27.527 12.3731 27.527 12.8333V28.7861C27.527 29.0162 27.3377 29.2028 27.1043 29.2028C27.0249 29.2028 26.9471 29.1807 26.8798 29.1391L20.7635 25.3594L14.6473 29.1391C14.4495 29.2613 14.1886 29.2024 14.0646 29.0074C14.0224 28.9411 14 28.8644 14 28.7861V12.8333C14 12.3731 14.3785 12 14.8454 12ZM25.8362 13.6667H15.6909V26.527L20.7635 23.3923L25.8362 26.527V13.6667Z"
+                                      fill="#1E1E1E" />
+                                  </svg>
+                                </a>
+
+                                <a href="" class="d-flex mx-1 p-1 align-items-center border rounded">
+                                  <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                                      <path
+                                        d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                                        fill="#FF6969" />
+                                    </svg>
+                                  </div>
+                                  <div>
+                                    <p class="m-1">221</p>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+
+                            <!-- card text -->
+
+                            <div class="card-text">
+                              <div class="d-flex text-center">
+                                <h5>TheToolBus</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                  <path
+                                    d="M8.0154 0.145629C6.61978 -0.30616 5.1026 0.322268 4.43518 1.62862L3.63281 3.19911C3.53748 3.38572 3.38572 3.53748 3.19911 3.63281L1.62862 4.43518C0.322268 5.1026 -0.30616 6.61978 0.145629 8.0154L0.68878 9.69327C0.753316 9.89262 0.753316 10.1073 0.68878 10.3067L0.145629 11.9845C-0.30616 13.3802 0.322268 14.8973 1.62862 15.5648L3.19911 16.3671C3.38572 16.4625 3.53748 16.6142 3.63281 16.8009L4.43518 18.3714C5.1026 19.6777 6.61978 20.3062 8.0154 19.8544L9.69327 19.3112C9.89262 19.2467 10.1073 19.2467 10.3067 19.3112L11.9845 19.8544C13.3802 20.3062 14.8973 19.6777 15.5648 18.3714L16.3671 16.8009C16.4625 16.6142 16.6142 16.4625 16.8009 16.3671L18.3714 15.5648C19.6777 14.8973 20.3062 13.3802 19.8544 11.9845L19.3112 10.3067C19.2467 10.1073 19.2467 9.89262 19.3112 9.69327L19.8544 8.0154C20.3062 6.61978 19.6777 5.1026 18.3714 4.43518L16.8009 3.63281C16.6142 3.53748 16.4625 3.38572 16.3671 3.19911L15.5648 1.62862C14.8973 0.322268 13.3802 -0.30616 11.9845 0.145629L10.3067 0.68878C10.1073 0.753306 9.89262 0.753316 9.69327 0.68878L8.0154 0.145629ZM4.78192 9.7583L6.19015 8.34998L9.00659 11.1665L14.6395 5.5336L16.0478 6.94183L9.00659 13.9829L4.78192 9.7583Z"
+                                    fill="#1C92FF" />
+                                </svg>
+                              </div>
+                              <p>AssetsAI is an AI-powered tool that offers bespoke game assets in a variety...</p>
+                            </div>
+                            <div class="card-button d-flex justify-content-between">
+                              <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card rounded-4 my-3" style="width: 19rem;">
+                          <img src="./img/Rectangle 14.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+
+                            <!-- card title -->
+
+                            <div class="card-title d-flex align-items-center">
+                              <!-- Card title left -->
+                              <div>
+                                <a href="" class="border me-auto rounded py-2 px-3">Fremium</a>
+                              </div>
+                              <!-- Card title right -->
+                              <div class="d-flex ms-auto align-items-center">
+                                <a href="" class="mx-1">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="36" viewBox="0 0 42 42" fill="none">
+                                    <rect x="0.5" y="0.5" width="41" height="41" rx="7.5" fill="white" stroke="#D9D9D9" />
+                                    <path
+                                      d="M14.8454 12H26.6816C27.1485 12 27.527 12.3731 27.527 12.8333V28.7861C27.527 29.0162 27.3377 29.2028 27.1043 29.2028C27.0249 29.2028 26.9471 29.1807 26.8798 29.1391L20.7635 25.3594L14.6473 29.1391C14.4495 29.2613 14.1886 29.2024 14.0646 29.0074C14.0224 28.9411 14 28.8644 14 28.7861V12.8333C14 12.3731 14.3785 12 14.8454 12ZM25.8362 13.6667H15.6909V26.527L20.7635 23.3923L25.8362 26.527V13.6667Z"
+                                      fill="#1E1E1E" />
+                                  </svg>
+                                </a>
+
+                                <a href="" class="d-flex mx-1 p-1 align-items-center border rounded">
+                                  <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                                      <path
+                                        d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                                        fill="#FF6969" />
+                                    </svg>
+                                  </div>
+                                  <div>
+                                    <p class="m-1">221</p>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+
+                            <!-- card text -->
+
+                            <div class="card-text">
+                              <div class="d-flex text-center">
+                                <h5>TheToolBus</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                  <path
+                                    d="M8.0154 0.145629C6.61978 -0.30616 5.1026 0.322268 4.43518 1.62862L3.63281 3.19911C3.53748 3.38572 3.38572 3.53748 3.19911 3.63281L1.62862 4.43518C0.322268 5.1026 -0.30616 6.61978 0.145629 8.0154L0.68878 9.69327C0.753316 9.89262 0.753316 10.1073 0.68878 10.3067L0.145629 11.9845C-0.30616 13.3802 0.322268 14.8973 1.62862 15.5648L3.19911 16.3671C3.38572 16.4625 3.53748 16.6142 3.63281 16.8009L4.43518 18.3714C5.1026 19.6777 6.61978 20.3062 8.0154 19.8544L9.69327 19.3112C9.89262 19.2467 10.1073 19.2467 10.3067 19.3112L11.9845 19.8544C13.3802 20.3062 14.8973 19.6777 15.5648 18.3714L16.3671 16.8009C16.4625 16.6142 16.6142 16.4625 16.8009 16.3671L18.3714 15.5648C19.6777 14.8973 20.3062 13.3802 19.8544 11.9845L19.3112 10.3067C19.2467 10.1073 19.2467 9.89262 19.3112 9.69327L19.8544 8.0154C20.3062 6.61978 19.6777 5.1026 18.3714 4.43518L16.8009 3.63281C16.6142 3.53748 16.4625 3.38572 16.3671 3.19911L15.5648 1.62862C14.8973 0.322268 13.3802 -0.30616 11.9845 0.145629L10.3067 0.68878C10.1073 0.753306 9.89262 0.753316 9.69327 0.68878L8.0154 0.145629ZM4.78192 9.7583L6.19015 8.34998L9.00659 11.1665L14.6395 5.5336L16.0478 6.94183L9.00659 13.9829L4.78192 9.7583Z"
+                                    fill="#1C92FF" />
+                                </svg>
+                              </div>
+                              <p>AssetsAI is an AI-powered tool that offers bespoke game assets in a variety...</p>
+                            </div>
+                            <div class="card-button d-flex justify-content-between">
+                              <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex flex-wrap justify-content-around justify-content-sm-between container-lg w-100">
+                        <div class="card rounded-4 my-3" style="width: 19rem;">
+                          <img src="./img/Rectangle 14 (1).png" class="card-img-top" alt="...">
+                          <div class="card-body">
+
+                            <!-- card title -->
+
+                            <div class="card-title d-flex align-items-center">
+                              <!-- Card title left -->
+                              <div>
+                                <a href="" class="border me-auto rounded py-2 px-3">Premium</a>
+                              </div>
+                              <!-- Card title right -->
+                              <div class="d-flex ms-auto align-items-center">
+                                <a href="" class="mx-1">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="36" viewBox="0 0 42 42" fill="none">
+                                    <rect x="0.5" y="0.5" width="41" height="41" rx="7.5" fill="white" stroke="#D9D9D9" />
+                                    <path
+                                      d="M14.8454 12H26.6816C27.1485 12 27.527 12.3731 27.527 12.8333V28.7861C27.527 29.0162 27.3377 29.2028 27.1043 29.2028C27.0249 29.2028 26.9471 29.1807 26.8798 29.1391L20.7635 25.3594L14.6473 29.1391C14.4495 29.2613 14.1886 29.2024 14.0646 29.0074C14.0224 28.9411 14 28.8644 14 28.7861V12.8333C14 12.3731 14.3785 12 14.8454 12ZM25.8362 13.6667H15.6909V26.527L20.7635 23.3923L25.8362 26.527V13.6667Z"
+                                      fill="#1E1E1E" />
+                                  </svg>
+                                </a>
+
+                                <a href="" class="d-flex mx-1 p-1 align-items-center border rounded">
+                                  <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                                      <path
+                                        d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                                        fill="#FF6969" />
+                                    </svg>
+                                  </div>
+                                  <div>
+                                    <p class="m-1">221</p>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+
+                            <!-- card text -->
+
+                            <div class="card-text">
+                              <div class="d-flex text-center">
+                                <h5>AssetsAI</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                  <path
+                                    d="M8.0154 0.145629C6.61978 -0.30616 5.1026 0.322268 4.43518 1.62862L3.63281 3.19911C3.53748 3.38572 3.38572 3.53748 3.19911 3.63281L1.62862 4.43518C0.322268 5.1026 -0.30616 6.61978 0.145629 8.0154L0.68878 9.69327C0.753316 9.89262 0.753316 10.1073 0.68878 10.3067L0.145629 11.9845C-0.30616 13.3802 0.322268 14.8973 1.62862 15.5648L3.19911 16.3671C3.38572 16.4625 3.53748 16.6142 3.63281 16.8009L4.43518 18.3714C5.1026 19.6777 6.61978 20.3062 8.0154 19.8544L9.69327 19.3112C9.89262 19.2467 10.1073 19.2467 10.3067 19.3112L11.9845 19.8544C13.3802 20.3062 14.8973 19.6777 15.5648 18.3714L16.3671 16.8009C16.4625 16.6142 16.6142 16.4625 16.8009 16.3671L18.3714 15.5648C19.6777 14.8973 20.3062 13.3802 19.8544 11.9845L19.3112 10.3067C19.2467 10.1073 19.2467 9.89262 19.3112 9.69327L19.8544 8.0154C20.3062 6.61978 19.6777 5.1026 18.3714 4.43518L16.8009 3.63281C16.6142 3.53748 16.4625 3.38572 16.3671 3.19911L15.5648 1.62862C14.8973 0.322268 13.3802 -0.30616 11.9845 0.145629L10.3067 0.68878C10.1073 0.753306 9.89262 0.753316 9.69327 0.68878L8.0154 0.145629ZM4.78192 9.7583L6.19015 8.34998L9.00659 11.1665L14.6395 5.5336L16.0478 6.94183L9.00659 13.9829L4.78192 9.7583Z"
+                                    fill="#1C92FF" />
+                                </svg>
+                              </div>
+                              <p>AssetsAI is an AI-powered tool that offers bespoke game assets in a variety...</p>
+                            </div>
+                            <div class="card-button d-flex justify-content-between">
+                              <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card rounded-4 my-3" style="width: 19rem;">
+                          <img src="./img/Rectangle 14 (1).png" class="card-img-top" alt="...">
+                          <div class="card-body">
+
+                            <!-- card title -->
+
+                            <div class="card-title d-flex align-items-center">
+                              <!-- Card title left -->
+                              <div>
+                                <a href="" class="border me-auto rounded py-2 px-3">Premium</a>
+                              </div>
+                              <!-- Card title right -->
+                              <div class="d-flex ms-auto align-items-center">
+                                <a href="" class="mx-1">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="36" viewBox="0 0 42 42" fill="none">
+                                    <rect x="0.5" y="0.5" width="41" height="41" rx="7.5" fill="white" stroke="#D9D9D9" />
+                                    <path
+                                      d="M14.8454 12H26.6816C27.1485 12 27.527 12.3731 27.527 12.8333V28.7861C27.527 29.0162 27.3377 29.2028 27.1043 29.2028C27.0249 29.2028 26.9471 29.1807 26.8798 29.1391L20.7635 25.3594L14.6473 29.1391C14.4495 29.2613 14.1886 29.2024 14.0646 29.0074C14.0224 28.9411 14 28.8644 14 28.7861V12.8333C14 12.3731 14.3785 12 14.8454 12ZM25.8362 13.6667H15.6909V26.527L20.7635 23.3923L25.8362 26.527V13.6667Z"
+                                      fill="#1E1E1E" />
+                                  </svg>
+                                </a>
+
+                                <a href="" class="d-flex mx-1 p-1 align-items-center border rounded">
+                                  <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                                      <path
+                                        d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                                        fill="#FF6969" />
+                                    </svg>
+                                  </div>
+                                  <div>
+                                    <p class="m-1">221</p>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+
+                            <!-- card text -->
+
+                            <div class="card-text">
+                              <div class="d-flex text-center">
+                                <h5>AssetsAI</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                  <path
+                                    d="M8.0154 0.145629C6.61978 -0.30616 5.1026 0.322268 4.43518 1.62862L3.63281 3.19911C3.53748 3.38572 3.38572 3.53748 3.19911 3.63281L1.62862 4.43518C0.322268 5.1026 -0.30616 6.61978 0.145629 8.0154L0.68878 9.69327C0.753316 9.89262 0.753316 10.1073 0.68878 10.3067L0.145629 11.9845C-0.30616 13.3802 0.322268 14.8973 1.62862 15.5648L3.19911 16.3671C3.38572 16.4625 3.53748 16.6142 3.63281 16.8009L4.43518 18.3714C5.1026 19.6777 6.61978 20.3062 8.0154 19.8544L9.69327 19.3112C9.89262 19.2467 10.1073 19.2467 10.3067 19.3112L11.9845 19.8544C13.3802 20.3062 14.8973 19.6777 15.5648 18.3714L16.3671 16.8009C16.4625 16.6142 16.6142 16.4625 16.8009 16.3671L18.3714 15.5648C19.6777 14.8973 20.3062 13.3802 19.8544 11.9845L19.3112 10.3067C19.2467 10.1073 19.2467 9.89262 19.3112 9.69327L19.8544 8.0154C20.3062 6.61978 19.6777 5.1026 18.3714 4.43518L16.8009 3.63281C16.6142 3.53748 16.4625 3.38572 16.3671 3.19911L15.5648 1.62862C14.8973 0.322268 13.3802 -0.30616 11.9845 0.145629L10.3067 0.68878C10.1073 0.753306 9.89262 0.753316 9.69327 0.68878L8.0154 0.145629ZM4.78192 9.7583L6.19015 8.34998L9.00659 11.1665L14.6395 5.5336L16.0478 6.94183L9.00659 13.9829L4.78192 9.7583Z"
+                                    fill="#1C92FF" />
+                                </svg>
+                              </div>
+                              <p>AssetsAI is an AI-powered tool that offers bespoke game assets in a variety...</p>
+                            </div>
+                            <div class="card-button d-flex justify-content-between">
+                              <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card rounded-4 my-3" style="width: 19rem;">
+                          <img src="./img/Rectangle 14 (1).png" class="card-img-top" alt="...">
+                          <div class="card-body">
+
+                            <!-- card title -->
+
+                            <div class="card-title d-flex align-items-center">
+                              <!-- Card title left -->
+                              <div>
+                                <a href="" class="border me-auto rounded py-2 px-3">Premium</a>
+                              </div>
+                              <!-- Card title right -->
+                              <div class="d-flex ms-auto align-items-center">
+                                <a href="" class="mx-1">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="36" viewBox="0 0 42 42" fill="none">
+                                    <rect x="0.5" y="0.5" width="41" height="41" rx="7.5" fill="white" stroke="#D9D9D9" />
+                                    <path
+                                      d="M14.8454 12H26.6816C27.1485 12 27.527 12.3731 27.527 12.8333V28.7861C27.527 29.0162 27.3377 29.2028 27.1043 29.2028C27.0249 29.2028 26.9471 29.1807 26.8798 29.1391L20.7635 25.3594L14.6473 29.1391C14.4495 29.2613 14.1886 29.2024 14.0646 29.0074C14.0224 28.9411 14 28.8644 14 28.7861V12.8333C14 12.3731 14.3785 12 14.8454 12ZM25.8362 13.6667H15.6909V26.527L20.7635 23.3923L25.8362 26.527V13.6667Z"
+                                      fill="#1E1E1E" />
+                                  </svg>
+                                </a>
+
+                                <a href="" class="d-flex mx-1 p-1 align-items-center border rounded">
+                                  <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                                      <path
+                                        d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                                        fill="#FF6969" />
+                                    </svg>
+                                  </div>
+                                  <div>
+                                    <p class="m-1">221</p>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+
+                            <!-- card text -->
+
+                            <div class="card-text">
+                              <div class="d-flex text-center">
+                                <h5>AssetsAI</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                  <path
+                                    d="M8.0154 0.145629C6.61978 -0.30616 5.1026 0.322268 4.43518 1.62862L3.63281 3.19911C3.53748 3.38572 3.38572 3.53748 3.19911 3.63281L1.62862 4.43518C0.322268 5.1026 -0.30616 6.61978 0.145629 8.0154L0.68878 9.69327C0.753316 9.89262 0.753316 10.1073 0.68878 10.3067L0.145629 11.9845C-0.30616 13.3802 0.322268 14.8973 1.62862 15.5648L3.19911 16.3671C3.38572 16.4625 3.53748 16.6142 3.63281 16.8009L4.43518 18.3714C5.1026 19.6777 6.61978 20.3062 8.0154 19.8544L9.69327 19.3112C9.89262 19.2467 10.1073 19.2467 10.3067 19.3112L11.9845 19.8544C13.3802 20.3062 14.8973 19.6777 15.5648 18.3714L16.3671 16.8009C16.4625 16.6142 16.6142 16.4625 16.8009 16.3671L18.3714 15.5648C19.6777 14.8973 20.3062 13.3802 19.8544 11.9845L19.3112 10.3067C19.2467 10.1073 19.2467 9.89262 19.3112 9.69327L19.8544 8.0154C20.3062 6.61978 19.6777 5.1026 18.3714 4.43518L16.8009 3.63281C16.6142 3.53748 16.4625 3.38572 16.3671 3.19911L15.5648 1.62862C14.8973 0.322268 13.3802 -0.30616 11.9845 0.145629L10.3067 0.68878C10.1073 0.753306 9.89262 0.753316 9.69327 0.68878L8.0154 0.145629ZM4.78192 9.7583L6.19015 8.34998L9.00659 11.1665L14.6395 5.5336L16.0478 6.94183L9.00659 13.9829L4.78192 9.7583Z"
+                                    fill="#1C92FF" />
+                                </svg>
+                              </div>
+                              <p>AssetsAI is an AI-powered tool that offers bespoke game assets in a variety...</p>
+                            </div>
+                            <div class="card-button d-flex justify-content-between">
+                              <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex flex-wrap justify-content-around justify-content-sm-between container-lg w-100">
+                        <div class="card rounded-4 my-3" style="width: 19rem;">
+                          <img src="./img/Rectangle 14 (2).png" class="card-img-top" alt="...">
+                          <div class="card-body">
+
+                            <!-- card title -->
+
+                            <div class="card-title d-flex align-items-center">
+                              <!-- Card title left -->
+                              <div>
+                                <a href="" class="border me-auto rounded py-2 px-3">Premium</a>
+                              </div>
+                              <!-- Card title right -->
+                              <div class="d-flex ms-auto align-items-center">
+                                <a href="" class="mx-1">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="36" viewBox="0 0 42 42" fill="none">
+                                    <rect x="0.5" y="0.5" width="41" height="41" rx="7.5" fill="white" stroke="#D9D9D9" />
+                                    <path
+                                      d="M14.8454 12H26.6816C27.1485 12 27.527 12.3731 27.527 12.8333V28.7861C27.527 29.0162 27.3377 29.2028 27.1043 29.2028C27.0249 29.2028 26.9471 29.1807 26.8798 29.1391L20.7635 25.3594L14.6473 29.1391C14.4495 29.2613 14.1886 29.2024 14.0646 29.0074C14.0224 28.9411 14 28.8644 14 28.7861V12.8333C14 12.3731 14.3785 12 14.8454 12ZM25.8362 13.6667H15.6909V26.527L20.7635 23.3923L25.8362 26.527V13.6667Z"
+                                      fill="#1E1E1E" />
+                                  </svg>
+                                </a>
+
+                                <a href="" class="d-flex mx-1 p-1 align-items-center border rounded">
+                                  <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                                      <path
+                                        d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                                        fill="#FF6969" />
+                                    </svg>
+                                  </div>
+                                  <div>
+                                    <p class="m-1">221</p>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+
+                            <!-- card text -->
+
+                            <div class="card-text">
+                              <div class="d-flex text-center">
+                                <h5>Chatbase</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                  <path
+                                    d="M8.0154 0.145629C6.61978 -0.30616 5.1026 0.322268 4.43518 1.62862L3.63281 3.19911C3.53748 3.38572 3.38572 3.53748 3.19911 3.63281L1.62862 4.43518C0.322268 5.1026 -0.30616 6.61978 0.145629 8.0154L0.68878 9.69327C0.753316 9.89262 0.753316 10.1073 0.68878 10.3067L0.145629 11.9845C-0.30616 13.3802 0.322268 14.8973 1.62862 15.5648L3.19911 16.3671C3.38572 16.4625 3.53748 16.6142 3.63281 16.8009L4.43518 18.3714C5.1026 19.6777 6.61978 20.3062 8.0154 19.8544L9.69327 19.3112C9.89262 19.2467 10.1073 19.2467 10.3067 19.3112L11.9845 19.8544C13.3802 20.3062 14.8973 19.6777 15.5648 18.3714L16.3671 16.8009C16.4625 16.6142 16.6142 16.4625 16.8009 16.3671L18.3714 15.5648C19.6777 14.8973 20.3062 13.3802 19.8544 11.9845L19.3112 10.3067C19.2467 10.1073 19.2467 9.89262 19.3112 9.69327L19.8544 8.0154C20.3062 6.61978 19.6777 5.1026 18.3714 4.43518L16.8009 3.63281C16.6142 3.53748 16.4625 3.38572 16.3671 3.19911L15.5648 1.62862C14.8973 0.322268 13.3802 -0.30616 11.9845 0.145629L10.3067 0.68878C10.1073 0.753306 9.89262 0.753316 9.69327 0.68878L8.0154 0.145629ZM4.78192 9.7583L6.19015 8.34998L9.00659 11.1665L14.6395 5.5336L16.0478 6.94183L9.00659 13.9829L4.78192 9.7583Z"
+                                    fill="#1C92FF" />
+                                </svg>
+                              </div>
+                              <p>Are you looking to explore the world of artificial intelligence...</p>
+                            </div>
+                            <div class="card-button d-flex justify-content-between">
+                              <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card rounded-4 my-3" style="width: 19rem;">
+                          <img src="./img/Rectangle 14 (2).png" class="card-img-top" alt="...">
+                          <div class="card-body">
+
+                            <!-- card title -->
+
+                            <div class="card-title d-flex align-items-center">
+                              <!-- Card title left -->
+                              <div>
+                                <a href="" class="border me-auto rounded py-2 px-3">Premium</a>
+                              </div>
+                              <!-- Card title right -->
+                              <div class="d-flex ms-auto align-items-center">
+                                <a href="" class="mx-1">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="36" viewBox="0 0 42 42" fill="none">
+                                    <rect x="0.5" y="0.5" width="41" height="41" rx="7.5" fill="white" stroke="#D9D9D9" />
+                                    <path
+                                      d="M14.8454 12H26.6816C27.1485 12 27.527 12.3731 27.527 12.8333V28.7861C27.527 29.0162 27.3377 29.2028 27.1043 29.2028C27.0249 29.2028 26.9471 29.1807 26.8798 29.1391L20.7635 25.3594L14.6473 29.1391C14.4495 29.2613 14.1886 29.2024 14.0646 29.0074C14.0224 28.9411 14 28.8644 14 28.7861V12.8333C14 12.3731 14.3785 12 14.8454 12ZM25.8362 13.6667H15.6909V26.527L20.7635 23.3923L25.8362 26.527V13.6667Z"
+                                      fill="#1E1E1E" />
+                                  </svg>
+                                </a>
+
+                                <a href="" class="d-flex mx-1 p-1 align-items-center border rounded">
+                                  <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                                      <path
+                                        d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                                        fill="#FF6969" />
+                                    </svg>
+                                  </div>
+                                  <div>
+                                    <p class="m-1">221</p>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+
+                            <!-- card text -->
+
+                            <div class="card-text">
+                              <div class="d-flex text-center">
+                                <h5>Chatbase</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                  <path
+                                    d="M8.0154 0.145629C6.61978 -0.30616 5.1026 0.322268 4.43518 1.62862L3.63281 3.19911C3.53748 3.38572 3.38572 3.53748 3.19911 3.63281L1.62862 4.43518C0.322268 5.1026 -0.30616 6.61978 0.145629 8.0154L0.68878 9.69327C0.753316 9.89262 0.753316 10.1073 0.68878 10.3067L0.145629 11.9845C-0.30616 13.3802 0.322268 14.8973 1.62862 15.5648L3.19911 16.3671C3.38572 16.4625 3.53748 16.6142 3.63281 16.8009L4.43518 18.3714C5.1026 19.6777 6.61978 20.3062 8.0154 19.8544L9.69327 19.3112C9.89262 19.2467 10.1073 19.2467 10.3067 19.3112L11.9845 19.8544C13.3802 20.3062 14.8973 19.6777 15.5648 18.3714L16.3671 16.8009C16.4625 16.6142 16.6142 16.4625 16.8009 16.3671L18.3714 15.5648C19.6777 14.8973 20.3062 13.3802 19.8544 11.9845L19.3112 10.3067C19.2467 10.1073 19.2467 9.89262 19.3112 9.69327L19.8544 8.0154C20.3062 6.61978 19.6777 5.1026 18.3714 4.43518L16.8009 3.63281C16.6142 3.53748 16.4625 3.38572 16.3671 3.19911L15.5648 1.62862C14.8973 0.322268 13.3802 -0.30616 11.9845 0.145629L10.3067 0.68878C10.1073 0.753306 9.89262 0.753316 9.69327 0.68878L8.0154 0.145629ZM4.78192 9.7583L6.19015 8.34998L9.00659 11.1665L14.6395 5.5336L16.0478 6.94183L9.00659 13.9829L4.78192 9.7583Z"
+                                    fill="#1C92FF" />
+                                </svg>
+                              </div>
+                              <p>Are you looking to explore the world of artificial intelligence...</p>
+                            </div>
+                            <div class="card-button d-flex justify-content-between">
+                              <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card rounded-4 my-3" style="width: 19rem;">
+                          <img src="./img/Rectangle 14 (2).png" class="card-img-top" alt="...">
+                          <div class="card-body">
+
+                            <!-- card title -->
+
+                            <div class="card-title d-flex align-items-center">
+                              <!-- Card title left -->
+                              <div>
+                                <a href="" class="border me-auto rounded py-2 px-3">Premium</a>
+                              </div>
+                              <!-- Card title right -->
+                              <div class="d-flex ms-auto align-items-center">
+                                <a href="" class="mx-1">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="36" viewBox="0 0 42 42" fill="none">
+                                    <rect x="0.5" y="0.5" width="41" height="41" rx="7.5" fill="white" stroke="#D9D9D9" />
+                                    <path
+                                      d="M14.8454 12H26.6816C27.1485 12 27.527 12.3731 27.527 12.8333V28.7861C27.527 29.0162 27.3377 29.2028 27.1043 29.2028C27.0249 29.2028 26.9471 29.1807 26.8798 29.1391L20.7635 25.3594L14.6473 29.1391C14.4495 29.2613 14.1886 29.2024 14.0646 29.0074C14.0224 28.9411 14 28.8644 14 28.7861V12.8333C14 12.3731 14.3785 12 14.8454 12ZM25.8362 13.6667H15.6909V26.527L20.7635 23.3923L25.8362 26.527V13.6667Z"
+                                      fill="#1E1E1E" />
+                                  </svg>
+                                </a>
+
+                                <a href="" class="d-flex mx-1 p-1 align-items-center border rounded">
+                                  <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                                      <path
+                                        d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                                        fill="#FF6969" />
+                                    </svg>
+                                  </div>
+                                  <div>
+                                    <p class="m-1">221</p>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+
+                            <!-- card text -->
+
+                            <div class="card-text">
+                              <div class="d-flex text-center">
+                                <h5>Chatbase</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                  <path
+                                    d="M8.0154 0.145629C6.61978 -0.30616 5.1026 0.322268 4.43518 1.62862L3.63281 3.19911C3.53748 3.38572 3.38572 3.53748 3.19911 3.63281L1.62862 4.43518C0.322268 5.1026 -0.30616 6.61978 0.145629 8.0154L0.68878 9.69327C0.753316 9.89262 0.753316 10.1073 0.68878 10.3067L0.145629 11.9845C-0.30616 13.3802 0.322268 14.8973 1.62862 15.5648L3.19911 16.3671C3.38572 16.4625 3.53748 16.6142 3.63281 16.8009L4.43518 18.3714C5.1026 19.6777 6.61978 20.3062 8.0154 19.8544L9.69327 19.3112C9.89262 19.2467 10.1073 19.2467 10.3067 19.3112L11.9845 19.8544C13.3802 20.3062 14.8973 19.6777 15.5648 18.3714L16.3671 16.8009C16.4625 16.6142 16.6142 16.4625 16.8009 16.3671L18.3714 15.5648C19.6777 14.8973 20.3062 13.3802 19.8544 11.9845L19.3112 10.3067C19.2467 10.1073 19.2467 9.89262 19.3112 9.69327L19.8544 8.0154C20.3062 6.61978 19.6777 5.1026 18.3714 4.43518L16.8009 3.63281C16.6142 3.53748 16.4625 3.38572 16.3671 3.19911L15.5648 1.62862C14.8973 0.322268 13.3802 -0.30616 11.9845 0.145629L10.3067 0.68878C10.1073 0.753306 9.89262 0.753316 9.69327 0.68878L8.0154 0.145629ZM4.78192 9.7583L6.19015 8.34998L9.00659 11.1665L14.6395 5.5336L16.0478 6.94183L9.00659 13.9829L4.78192 9.7583Z"
+                                    fill="#1C92FF" />
+                                </svg>
+                              </div>
+                              <p>Are you looking to explore the world of artificial intelligence...</p>
+                            </div>
+                            <div class="card-button d-flex justify-content-between">
+                              <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                              <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        </div>  
+  <!-- Trending Tool Card End -->
+  <!-- popular plugins start -->
+  <!-- popular plugins Heading -->
+  <div class="container-lg d-flex justify-content-sm-between justify-content-evenly px-3 heading">
+    <h4>Popular Plugins <span class="text-secondary">(17)</span> </h4>
+    <a class="text-primary px-3 fw-bold" href="">See all</a>
+  </div>
+  <!-- Popular plugins card -->
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-flex flex-wrap justify-content-around justify-content-sm-between container-lg">
+                    <div class="card rounded-4 my-3" style="width: 19rem;">
+                      <img src="./img/Rectangle 14.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+          
+                        <!-- card title -->
+          
+                        <div class="card-title d-flex align-items-center">
+                          <!-- Card title left -->
+                          <div>
+                            <a href="" class="border me-auto rounded py-2 px-3">Fremium</a>
+                          </div>
+                          <!-- Card title right -->
+                          <div class="d-flex ms-auto align-items-center">
+                            <a href="" class="mx-1">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="36" viewBox="0 0 42 42" fill="none">
+                                <rect x="0.5" y="0.5" width="41" height="41" rx="7.5" fill="white" stroke="#D9D9D9" />
+                                <path
+                                  d="M14.8454 12H26.6816C27.1485 12 27.527 12.3731 27.527 12.8333V28.7861C27.527 29.0162 27.3377 29.2028 27.1043 29.2028C27.0249 29.2028 26.9471 29.1807 26.8798 29.1391L20.7635 25.3594L14.6473 29.1391C14.4495 29.2613 14.1886 29.2024 14.0646 29.0074C14.0224 28.9411 14 28.8644 14 28.7861V12.8333C14 12.3731 14.3785 12 14.8454 12ZM25.8362 13.6667H15.6909V26.527L20.7635 23.3923L25.8362 26.527V13.6667Z"
+                                  fill="#1E1E1E" />
+                              </svg>
+                            </a>
+          
+                            <a href="" class="d-flex mx-1 p-1 align-items-center border rounded">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                                  <path
+                                    d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                                    fill="#FF6969" />
+                                </svg>
+                              </div>
+                              <div>
+                                <p class="m-1">221</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+          
+                        <!-- card text -->
+          
+                        <div class="card-text">
+                          <div class="d-flex text-center">
+                            <h5>TheToolBus</h5>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                              <path
+                                d="M8.0154 0.145629C6.61978 -0.30616 5.1026 0.322268 4.43518 1.62862L3.63281 3.19911C3.53748 3.38572 3.38572 3.53748 3.19911 3.63281L1.62862 4.43518C0.322268 5.1026 -0.30616 6.61978 0.145629 8.0154L0.68878 9.69327C0.753316 9.89262 0.753316 10.1073 0.68878 10.3067L0.145629 11.9845C-0.30616 13.3802 0.322268 14.8973 1.62862 15.5648L3.19911 16.3671C3.38572 16.4625 3.53748 16.6142 3.63281 16.8009L4.43518 18.3714C5.1026 19.6777 6.61978 20.3062 8.0154 19.8544L9.69327 19.3112C9.89262 19.2467 10.1073 19.2467 10.3067 19.3112L11.9845 19.8544C13.3802 20.3062 14.8973 19.6777 15.5648 18.3714L16.3671 16.8009C16.4625 16.6142 16.6142 16.4625 16.8009 16.3671L18.3714 15.5648C19.6777 14.8973 20.3062 13.3802 19.8544 11.9845L19.3112 10.3067C19.2467 10.1073 19.2467 9.89262 19.3112 9.69327L19.8544 8.0154C20.3062 6.61978 19.6777 5.1026 18.3714 4.43518L16.8009 3.63281C16.6142 3.53748 16.4625 3.38572 16.3671 3.19911L15.5648 1.62862C14.8973 0.322268 13.3802 -0.30616 11.9845 0.145629L10.3067 0.68878C10.1073 0.753306 9.89262 0.753316 9.69327 0.68878L8.0154 0.145629ZM4.78192 9.7583L6.19015 8.34998L9.00659 11.1665L14.6395 5.5336L16.0478 6.94183L9.00659 13.9829L4.78192 9.7583Z"
+                                fill="#1C92FF" />
+                            </svg>
+                          </div>
+                          <p>AssetsAI is an AI-powered tool that offers bespoke game assets in a variety...</p>
+                        </div>
+                        <div class="card-button d-flex justify-content-between">
+                          <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card rounded-4 my-3" style="width: 19rem;">
+                      <img src="./img/Rectangle 14.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+          
+                        <!-- card title -->
+          
+                        <div class="card-title d-flex align-items-center">
+                          <!-- Card title left -->
+                          <div>
+                            <a href="" class="border me-auto rounded py-2 px-3">Fremium</a>
+                          </div>
+                          <!-- Card title right -->
+                          <div class="d-flex ms-auto align-items-center">
+                            <a href="" class="mx-1">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="36" viewBox="0 0 42 42" fill="none">
+                                <rect x="0.5" y="0.5" width="41" height="41" rx="7.5" fill="white" stroke="#D9D9D9" />
+                                <path
+                                  d="M14.8454 12H26.6816C27.1485 12 27.527 12.3731 27.527 12.8333V28.7861C27.527 29.0162 27.3377 29.2028 27.1043 29.2028C27.0249 29.2028 26.9471 29.1807 26.8798 29.1391L20.7635 25.3594L14.6473 29.1391C14.4495 29.2613 14.1886 29.2024 14.0646 29.0074C14.0224 28.9411 14 28.8644 14 28.7861V12.8333C14 12.3731 14.3785 12 14.8454 12ZM25.8362 13.6667H15.6909V26.527L20.7635 23.3923L25.8362 26.527V13.6667Z"
+                                  fill="#1E1E1E" />
+                              </svg>
+                            </a>
+          
+                            <a href="" class="d-flex mx-1 p-1 align-items-center border rounded">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                                  <path
+                                    d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                                    fill="#FF6969" />
+                                </svg>
+                              </div>
+                              <div>
+                                <p class="m-1">221</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+          
+                        <!-- card text -->
+          
+                        <div class="card-text">
+                          <div class="d-flex text-center">
+                            <h5>TheToolBus</h5>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                              <path
+                                d="M8.0154 0.145629C6.61978 -0.30616 5.1026 0.322268 4.43518 1.62862L3.63281 3.19911C3.53748 3.38572 3.38572 3.53748 3.19911 3.63281L1.62862 4.43518C0.322268 5.1026 -0.30616 6.61978 0.145629 8.0154L0.68878 9.69327C0.753316 9.89262 0.753316 10.1073 0.68878 10.3067L0.145629 11.9845C-0.30616 13.3802 0.322268 14.8973 1.62862 15.5648L3.19911 16.3671C3.38572 16.4625 3.53748 16.6142 3.63281 16.8009L4.43518 18.3714C5.1026 19.6777 6.61978 20.3062 8.0154 19.8544L9.69327 19.3112C9.89262 19.2467 10.1073 19.2467 10.3067 19.3112L11.9845 19.8544C13.3802 20.3062 14.8973 19.6777 15.5648 18.3714L16.3671 16.8009C16.4625 16.6142 16.6142 16.4625 16.8009 16.3671L18.3714 15.5648C19.6777 14.8973 20.3062 13.3802 19.8544 11.9845L19.3112 10.3067C19.2467 10.1073 19.2467 9.89262 19.3112 9.69327L19.8544 8.0154C20.3062 6.61978 19.6777 5.1026 18.3714 4.43518L16.8009 3.63281C16.6142 3.53748 16.4625 3.38572 16.3671 3.19911L15.5648 1.62862C14.8973 0.322268 13.3802 -0.30616 11.9845 0.145629L10.3067 0.68878C10.1073 0.753306 9.89262 0.753316 9.69327 0.68878L8.0154 0.145629ZM4.78192 9.7583L6.19015 8.34998L9.00659 11.1665L14.6395 5.5336L16.0478 6.94183L9.00659 13.9829L4.78192 9.7583Z"
+                                fill="#1C92FF" />
+                            </svg>
+                          </div>
+                          <p>AssetsAI is an AI-powered tool that offers bespoke game assets in a variety...</p>
+                        </div>
+                        <div class="card-button d-flex justify-content-between">
+                          <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card rounded-4 my-3" style="width: 19rem;">
+                      <img src="./img/Rectangle 14.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+          
+                        <!-- card title -->
+          
+                        <div class="card-title d-flex align-items-center">
+                          <!-- Card title left -->
+                          <div>
+                            <a href="" class="border me-auto rounded py-2 px-3">Fremium</a>
+                          </div>
+                          <!-- Card title right -->
+                          <div class="d-flex ms-auto align-items-center">
+                            <a href="" class="mx-1">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="36" viewBox="0 0 42 42" fill="none">
+                                <rect x="0.5" y="0.5" width="41" height="41" rx="7.5" fill="white" stroke="#D9D9D9" />
+                                <path
+                                  d="M14.8454 12H26.6816C27.1485 12 27.527 12.3731 27.527 12.8333V28.7861C27.527 29.0162 27.3377 29.2028 27.1043 29.2028C27.0249 29.2028 26.9471 29.1807 26.8798 29.1391L20.7635 25.3594L14.6473 29.1391C14.4495 29.2613 14.1886 29.2024 14.0646 29.0074C14.0224 28.9411 14 28.8644 14 28.7861V12.8333C14 12.3731 14.3785 12 14.8454 12ZM25.8362 13.6667H15.6909V26.527L20.7635 23.3923L25.8362 26.527V13.6667Z"
+                                  fill="#1E1E1E" />
+                              </svg>
+                            </a>
+          
+                            <a href="" class="d-flex mx-1 p-1 align-items-center border rounded">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                                  <path
+                                    d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                                    fill="#FF6969" />
+                                </svg>
+                              </div>
+                              <div>
+                                <p class="m-1">221</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+          
+                        <!-- card text -->
+          
+                        <div class="card-text">
+                          <div class="d-flex text-center">
+                            <h5>TheToolBus</h5>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                              <path
+                                d="M8.0154 0.145629C6.61978 -0.30616 5.1026 0.322268 4.43518 1.62862L3.63281 3.19911C3.53748 3.38572 3.38572 3.53748 3.19911 3.63281L1.62862 4.43518C0.322268 5.1026 -0.30616 6.61978 0.145629 8.0154L0.68878 9.69327C0.753316 9.89262 0.753316 10.1073 0.68878 10.3067L0.145629 11.9845C-0.30616 13.3802 0.322268 14.8973 1.62862 15.5648L3.19911 16.3671C3.38572 16.4625 3.53748 16.6142 3.63281 16.8009L4.43518 18.3714C5.1026 19.6777 6.61978 20.3062 8.0154 19.8544L9.69327 19.3112C9.89262 19.2467 10.1073 19.2467 10.3067 19.3112L11.9845 19.8544C13.3802 20.3062 14.8973 19.6777 15.5648 18.3714L16.3671 16.8009C16.4625 16.6142 16.6142 16.4625 16.8009 16.3671L18.3714 15.5648C19.6777 14.8973 20.3062 13.3802 19.8544 11.9845L19.3112 10.3067C19.2467 10.1073 19.2467 9.89262 19.3112 9.69327L19.8544 8.0154C20.3062 6.61978 19.6777 5.1026 18.3714 4.43518L16.8009 3.63281C16.6142 3.53748 16.4625 3.38572 16.3671 3.19911L15.5648 1.62862C14.8973 0.322268 13.3802 -0.30616 11.9845 0.145629L10.3067 0.68878C10.1073 0.753306 9.89262 0.753316 9.69327 0.68878L8.0154 0.145629ZM4.78192 9.7583L6.19015 8.34998L9.00659 11.1665L14.6395 5.5336L16.0478 6.94183L9.00659 13.9829L4.78192 9.7583Z"
+                                fill="#1C92FF" />
+                            </svg>
+                          </div>
+                          <p>AssetsAI is an AI-powered tool that offers bespoke game assets in a variety...</p>
+                        </div>
+                        <div class="card-button d-flex justify-content-between">
+                          <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex flex-wrap justify-content-around justify-content-sm-between container-lg">
+                    <div class="card rounded-4 my-3" style="width: 19rem;">
+                      <img src="./img/Rectangle 14 (1).png" class="card-img-top" alt="...">
+                      <div class="card-body">
+          
+                        <!-- card title -->
+          
+                        <div class="card-title d-flex align-items-center">
+                          <!-- Card title left -->
+                          <div>
+                            <a href="" class="border me-auto rounded py-2 px-3">Premium</a>
+                          </div>
+                          <!-- Card title right -->
+                          <div class="d-flex ms-auto align-items-center">
+                            <a href="" class="mx-1">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="36" viewBox="0 0 42 42" fill="none">
+                                <rect x="0.5" y="0.5" width="41" height="41" rx="7.5" fill="white" stroke="#D9D9D9" />
+                                <path
+                                  d="M14.8454 12H26.6816C27.1485 12 27.527 12.3731 27.527 12.8333V28.7861C27.527 29.0162 27.3377 29.2028 27.1043 29.2028C27.0249 29.2028 26.9471 29.1807 26.8798 29.1391L20.7635 25.3594L14.6473 29.1391C14.4495 29.2613 14.1886 29.2024 14.0646 29.0074C14.0224 28.9411 14 28.8644 14 28.7861V12.8333C14 12.3731 14.3785 12 14.8454 12ZM25.8362 13.6667H15.6909V26.527L20.7635 23.3923L25.8362 26.527V13.6667Z"
+                                  fill="#1E1E1E" />
+                              </svg>
+                            </a>
+          
+                            <a href="" class="d-flex mx-1 p-1 align-items-center border rounded">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                                  <path
+                                    d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                                    fill="#FF6969" />
+                                </svg>
+                              </div>
+                              <div>
+                                <p class="m-1">221</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+          
+                        <!-- card text -->
+          
+                        <div class="card-text">
+                          <div class="d-flex text-center">
+                            <h5>AssetsAI</h5>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                              <path
+                                d="M8.0154 0.145629C6.61978 -0.30616 5.1026 0.322268 4.43518 1.62862L3.63281 3.19911C3.53748 3.38572 3.38572 3.53748 3.19911 3.63281L1.62862 4.43518C0.322268 5.1026 -0.30616 6.61978 0.145629 8.0154L0.68878 9.69327C0.753316 9.89262 0.753316 10.1073 0.68878 10.3067L0.145629 11.9845C-0.30616 13.3802 0.322268 14.8973 1.62862 15.5648L3.19911 16.3671C3.38572 16.4625 3.53748 16.6142 3.63281 16.8009L4.43518 18.3714C5.1026 19.6777 6.61978 20.3062 8.0154 19.8544L9.69327 19.3112C9.89262 19.2467 10.1073 19.2467 10.3067 19.3112L11.9845 19.8544C13.3802 20.3062 14.8973 19.6777 15.5648 18.3714L16.3671 16.8009C16.4625 16.6142 16.6142 16.4625 16.8009 16.3671L18.3714 15.5648C19.6777 14.8973 20.3062 13.3802 19.8544 11.9845L19.3112 10.3067C19.2467 10.1073 19.2467 9.89262 19.3112 9.69327L19.8544 8.0154C20.3062 6.61978 19.6777 5.1026 18.3714 4.43518L16.8009 3.63281C16.6142 3.53748 16.4625 3.38572 16.3671 3.19911L15.5648 1.62862C14.8973 0.322268 13.3802 -0.30616 11.9845 0.145629L10.3067 0.68878C10.1073 0.753306 9.89262 0.753316 9.69327 0.68878L8.0154 0.145629ZM4.78192 9.7583L6.19015 8.34998L9.00659 11.1665L14.6395 5.5336L16.0478 6.94183L9.00659 13.9829L4.78192 9.7583Z"
+                                fill="#1C92FF" />
+                            </svg>
+                          </div>
+                          <p>AssetsAI is an AI-powered tool that offers bespoke game assets in a variety...</p>
+                        </div>
+                        <div class="card-button d-flex justify-content-between">
+                          <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card rounded-4 my-3" style="width: 19rem;">
+                      <img src="./img/Rectangle 14 (1).png" class="card-img-top" alt="...">
+                      <div class="card-body">
+          
+                        <!-- card title -->
+          
+                        <div class="card-title d-flex align-items-center">
+                          <!-- Card title left -->
+                          <div>
+                            <a href="" class="border me-auto rounded py-2 px-3">Premium</a>
+                          </div>
+                          <!-- Card title right -->
+                          <div class="d-flex ms-auto align-items-center">
+                            <a href="" class="mx-1">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="36" viewBox="0 0 42 42" fill="none">
+                                <rect x="0.5" y="0.5" width="41" height="41" rx="7.5" fill="white" stroke="#D9D9D9" />
+                                <path
+                                  d="M14.8454 12H26.6816C27.1485 12 27.527 12.3731 27.527 12.8333V28.7861C27.527 29.0162 27.3377 29.2028 27.1043 29.2028C27.0249 29.2028 26.9471 29.1807 26.8798 29.1391L20.7635 25.3594L14.6473 29.1391C14.4495 29.2613 14.1886 29.2024 14.0646 29.0074C14.0224 28.9411 14 28.8644 14 28.7861V12.8333C14 12.3731 14.3785 12 14.8454 12ZM25.8362 13.6667H15.6909V26.527L20.7635 23.3923L25.8362 26.527V13.6667Z"
+                                  fill="#1E1E1E" />
+                              </svg>
+                            </a>
+          
+                            <a href="" class="d-flex mx-1 p-1 align-items-center border rounded">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                                  <path
+                                    d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                                    fill="#FF6969" />
+                                </svg>
+                              </div>
+                              <div>
+                                <p class="m-1">221</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+          
+                        <!-- card text -->
+          
+                        <div class="card-text">
+                          <div class="d-flex text-center">
+                            <h5>AssetsAI</h5>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                              <path
+                                d="M8.0154 0.145629C6.61978 -0.30616 5.1026 0.322268 4.43518 1.62862L3.63281 3.19911C3.53748 3.38572 3.38572 3.53748 3.19911 3.63281L1.62862 4.43518C0.322268 5.1026 -0.30616 6.61978 0.145629 8.0154L0.68878 9.69327C0.753316 9.89262 0.753316 10.1073 0.68878 10.3067L0.145629 11.9845C-0.30616 13.3802 0.322268 14.8973 1.62862 15.5648L3.19911 16.3671C3.38572 16.4625 3.53748 16.6142 3.63281 16.8009L4.43518 18.3714C5.1026 19.6777 6.61978 20.3062 8.0154 19.8544L9.69327 19.3112C9.89262 19.2467 10.1073 19.2467 10.3067 19.3112L11.9845 19.8544C13.3802 20.3062 14.8973 19.6777 15.5648 18.3714L16.3671 16.8009C16.4625 16.6142 16.6142 16.4625 16.8009 16.3671L18.3714 15.5648C19.6777 14.8973 20.3062 13.3802 19.8544 11.9845L19.3112 10.3067C19.2467 10.1073 19.2467 9.89262 19.3112 9.69327L19.8544 8.0154C20.3062 6.61978 19.6777 5.1026 18.3714 4.43518L16.8009 3.63281C16.6142 3.53748 16.4625 3.38572 16.3671 3.19911L15.5648 1.62862C14.8973 0.322268 13.3802 -0.30616 11.9845 0.145629L10.3067 0.68878C10.1073 0.753306 9.89262 0.753316 9.69327 0.68878L8.0154 0.145629ZM4.78192 9.7583L6.19015 8.34998L9.00659 11.1665L14.6395 5.5336L16.0478 6.94183L9.00659 13.9829L4.78192 9.7583Z"
+                                fill="#1C92FF" />
+                            </svg>
+                          </div>
+                          <p>AssetsAI is an AI-powered tool that offers bespoke game assets in a variety...</p>
+                        </div>
+                        <div class="card-button d-flex justify-content-between">
+                          <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card rounded-4 my-3" style="width: 19rem;">
+                      <img src="./img/Rectangle 14 (1).png" class="card-img-top" alt="...">
+                      <div class="card-body">
+          
+                        <!-- card title -->
+          
+                        <div class="card-title d-flex align-items-center">
+                          <!-- Card title left -->
+                          <div>
+                            <a href="" class="border me-auto rounded py-2 px-3">Premium</a>
+                          </div>
+                          <!-- Card title right -->
+                          <div class="d-flex ms-auto align-items-center">
+                            <a href="" class="mx-1">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="36" viewBox="0 0 42 42" fill="none">
+                                <rect x="0.5" y="0.5" width="41" height="41" rx="7.5" fill="white" stroke="#D9D9D9" />
+                                <path
+                                  d="M14.8454 12H26.6816C27.1485 12 27.527 12.3731 27.527 12.8333V28.7861C27.527 29.0162 27.3377 29.2028 27.1043 29.2028C27.0249 29.2028 26.9471 29.1807 26.8798 29.1391L20.7635 25.3594L14.6473 29.1391C14.4495 29.2613 14.1886 29.2024 14.0646 29.0074C14.0224 28.9411 14 28.8644 14 28.7861V12.8333C14 12.3731 14.3785 12 14.8454 12ZM25.8362 13.6667H15.6909V26.527L20.7635 23.3923L25.8362 26.527V13.6667Z"
+                                  fill="#1E1E1E" />
+                              </svg>
+                            </a>
+          
+                            <a href="" class="d-flex mx-1 p-1 align-items-center border rounded">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                                  <path
+                                    d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                                    fill="#FF6969" />
+                                </svg>
+                              </div>
+                              <div>
+                                <p class="m-1">221</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+          
+                        <!-- card text -->
+          
+                        <div class="card-text">
+                          <div class="d-flex text-center">
+                            <h5>AssetsAI</h5>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                              <path
+                                d="M8.0154 0.145629C6.61978 -0.30616 5.1026 0.322268 4.43518 1.62862L3.63281 3.19911C3.53748 3.38572 3.38572 3.53748 3.19911 3.63281L1.62862 4.43518C0.322268 5.1026 -0.30616 6.61978 0.145629 8.0154L0.68878 9.69327C0.753316 9.89262 0.753316 10.1073 0.68878 10.3067L0.145629 11.9845C-0.30616 13.3802 0.322268 14.8973 1.62862 15.5648L3.19911 16.3671C3.38572 16.4625 3.53748 16.6142 3.63281 16.8009L4.43518 18.3714C5.1026 19.6777 6.61978 20.3062 8.0154 19.8544L9.69327 19.3112C9.89262 19.2467 10.1073 19.2467 10.3067 19.3112L11.9845 19.8544C13.3802 20.3062 14.8973 19.6777 15.5648 18.3714L16.3671 16.8009C16.4625 16.6142 16.6142 16.4625 16.8009 16.3671L18.3714 15.5648C19.6777 14.8973 20.3062 13.3802 19.8544 11.9845L19.3112 10.3067C19.2467 10.1073 19.2467 9.89262 19.3112 9.69327L19.8544 8.0154C20.3062 6.61978 19.6777 5.1026 18.3714 4.43518L16.8009 3.63281C16.6142 3.53748 16.4625 3.38572 16.3671 3.19911L15.5648 1.62862C14.8973 0.322268 13.3802 -0.30616 11.9845 0.145629L10.3067 0.68878C10.1073 0.753306 9.89262 0.753316 9.69327 0.68878L8.0154 0.145629ZM4.78192 9.7583L6.19015 8.34998L9.00659 11.1665L14.6395 5.5336L16.0478 6.94183L9.00659 13.9829L4.78192 9.7583Z"
+                                fill="#1C92FF" />
+                            </svg>
+                          </div>
+                          <p>AssetsAI is an AI-powered tool that offers bespoke game assets in a variety...</p>
+                        </div>
+                        <div class="card-button d-flex justify-content-between">
+                          <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex flex-wrap justify-content-around justify-content-sm-between container-lg">
+                    <div class="card rounded-4 my-3" style="width: 19rem;">
+                      <img src="./img/Rectangle 14 (2).png" class="card-img-top" alt="...">
+                      <div class="card-body">
+          
+                        <!-- card title -->
+          
+                        <div class="card-title d-flex align-items-center">
+                          <!-- Card title left -->
+                          <div>
+                            <a href="" class="border me-auto rounded py-2 px-3">Premium</a>
+                          </div>
+                          <!-- Card title right -->
+                          <div class="d-flex ms-auto align-items-center">
+                            <a href="" class="mx-1">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="36" viewBox="0 0 42 42" fill="none">
+                                <rect x="0.5" y="0.5" width="41" height="41" rx="7.5" fill="white" stroke="#D9D9D9" />
+                                <path
+                                  d="M14.8454 12H26.6816C27.1485 12 27.527 12.3731 27.527 12.8333V28.7861C27.527 29.0162 27.3377 29.2028 27.1043 29.2028C27.0249 29.2028 26.9471 29.1807 26.8798 29.1391L20.7635 25.3594L14.6473 29.1391C14.4495 29.2613 14.1886 29.2024 14.0646 29.0074C14.0224 28.9411 14 28.8644 14 28.7861V12.8333C14 12.3731 14.3785 12 14.8454 12ZM25.8362 13.6667H15.6909V26.527L20.7635 23.3923L25.8362 26.527V13.6667Z"
+                                  fill="#1E1E1E" />
+                              </svg>
+                            </a>
+          
+                            <a href="" class="d-flex mx-1 p-1 align-items-center border rounded">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                                  <path
+                                    d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                                    fill="#FF6969" />
+                                </svg>
+                              </div>
+                              <div>
+                                <p class="m-1">221</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+          
+                        <!-- card text -->
+          
+                        <div class="card-text">
+                          <div class="d-flex text-center">
+                            <h5>Reforge</h5>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                              <path
+                                d="M8.0154 0.145629C6.61978 -0.30616 5.1026 0.322268 4.43518 1.62862L3.63281 3.19911C3.53748 3.38572 3.38572 3.53748 3.19911 3.63281L1.62862 4.43518C0.322268 5.1026 -0.30616 6.61978 0.145629 8.0154L0.68878 9.69327C0.753316 9.89262 0.753316 10.1073 0.68878 10.3067L0.145629 11.9845C-0.30616 13.3802 0.322268 14.8973 1.62862 15.5648L3.19911 16.3671C3.38572 16.4625 3.53748 16.6142 3.63281 16.8009L4.43518 18.3714C5.1026 19.6777 6.61978 20.3062 8.0154 19.8544L9.69327 19.3112C9.89262 19.2467 10.1073 19.2467 10.3067 19.3112L11.9845 19.8544C13.3802 20.3062 14.8973 19.6777 15.5648 18.3714L16.3671 16.8009C16.4625 16.6142 16.6142 16.4625 16.8009 16.3671L18.3714 15.5648C19.6777 14.8973 20.3062 13.3802 19.8544 11.9845L19.3112 10.3067C19.2467 10.1073 19.2467 9.89262 19.3112 9.69327L19.8544 8.0154C20.3062 6.61978 19.6777 5.1026 18.3714 4.43518L16.8009 3.63281C16.6142 3.53748 16.4625 3.38572 16.3671 3.19911L15.5648 1.62862C14.8973 0.322268 13.3802 -0.30616 11.9845 0.145629L10.3067 0.68878C10.1073 0.753306 9.89262 0.753316 9.69327 0.68878L8.0154 0.145629ZM4.78192 9.7583L6.19015 8.34998L9.00659 11.1665L14.6395 5.5336L16.0478 6.94183L9.00659 13.9829L4.78192 9.7583Z"
+                                fill="#1C92FF" />
+                            </svg>
+                          </div>
+                          <p>Are you looking to explore the world of artificial intelligence...</p>
+                        </div>
+                        <div class="card-button d-flex justify-content-between">
+                          <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card rounded-4 my-3" style="width: 19rem;">
+                      <img src="./img/Rectangle 14 (2).png" class="card-img-top" alt="...">
+                      <div class="card-body">
+          
+                        <!-- card title -->
+          
+                        <div class="card-title d-flex align-items-center">
+                          <!-- Card title left -->
+                          <div>
+                            <a href="" class="border me-auto rounded py-2 px-3">Premium</a>
+                          </div>
+                          <!-- Card title right -->
+                          <div class="d-flex ms-auto align-items-center">
+                            <a href="" class="mx-1">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="36" viewBox="0 0 42 42" fill="none">
+                                <rect x="0.5" y="0.5" width="41" height="41" rx="7.5" fill="white" stroke="#D9D9D9" />
+                                <path
+                                  d="M14.8454 12H26.6816C27.1485 12 27.527 12.3731 27.527 12.8333V28.7861C27.527 29.0162 27.3377 29.2028 27.1043 29.2028C27.0249 29.2028 26.9471 29.1807 26.8798 29.1391L20.7635 25.3594L14.6473 29.1391C14.4495 29.2613 14.1886 29.2024 14.0646 29.0074C14.0224 28.9411 14 28.8644 14 28.7861V12.8333C14 12.3731 14.3785 12 14.8454 12ZM25.8362 13.6667H15.6909V26.527L20.7635 23.3923L25.8362 26.527V13.6667Z"
+                                  fill="#1E1E1E" />
+                              </svg>
+                            </a>
+          
+                            <a href="" class="d-flex mx-1 p-1 align-items-center border rounded">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                                  <path
+                                    d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                                    fill="#FF6969" />
+                                </svg>
+                              </div>
+                              <div>
+                                <p class="m-1">221</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+          
+                        <!-- card text -->
+          
+                        <div class="card-text">
+                          <div class="d-flex text-center">
+                            <h5>Reforge</h5>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                              <path
+                                d="M8.0154 0.145629C6.61978 -0.30616 5.1026 0.322268 4.43518 1.62862L3.63281 3.19911C3.53748 3.38572 3.38572 3.53748 3.19911 3.63281L1.62862 4.43518C0.322268 5.1026 -0.30616 6.61978 0.145629 8.0154L0.68878 9.69327C0.753316 9.89262 0.753316 10.1073 0.68878 10.3067L0.145629 11.9845C-0.30616 13.3802 0.322268 14.8973 1.62862 15.5648L3.19911 16.3671C3.38572 16.4625 3.53748 16.6142 3.63281 16.8009L4.43518 18.3714C5.1026 19.6777 6.61978 20.3062 8.0154 19.8544L9.69327 19.3112C9.89262 19.2467 10.1073 19.2467 10.3067 19.3112L11.9845 19.8544C13.3802 20.3062 14.8973 19.6777 15.5648 18.3714L16.3671 16.8009C16.4625 16.6142 16.6142 16.4625 16.8009 16.3671L18.3714 15.5648C19.6777 14.8973 20.3062 13.3802 19.8544 11.9845L19.3112 10.3067C19.2467 10.1073 19.2467 9.89262 19.3112 9.69327L19.8544 8.0154C20.3062 6.61978 19.6777 5.1026 18.3714 4.43518L16.8009 3.63281C16.6142 3.53748 16.4625 3.38572 16.3671 3.19911L15.5648 1.62862C14.8973 0.322268 13.3802 -0.30616 11.9845 0.145629L10.3067 0.68878C10.1073 0.753306 9.89262 0.753316 9.69327 0.68878L8.0154 0.145629ZM4.78192 9.7583L6.19015 8.34998L9.00659 11.1665L14.6395 5.5336L16.0478 6.94183L9.00659 13.9829L4.78192 9.7583Z"
+                                fill="#1C92FF" />
+                            </svg>
+                          </div>
+                          <p>Are you looking to explore the world of artificial intelligence...</p>
+                        </div>
+                        <div class="card-button d-flex justify-content-between">
+                          <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card rounded-4 my-3" style="width: 19rem;">
+                      <img src="./img/Rectangle 14 (2).png" class="card-img-top" alt="...">
+                      <div class="card-body">
+          
+                        <!-- card title -->
+          
+                        <div class="card-title d-flex align-items-center">
+                          <!-- Card title left -->
+                          <div>
+                            <a href="" class="border me-auto rounded py-2 px-3">Premium</a>
+                          </div>
+                          <!-- Card title right -->
+                          <div class="d-flex ms-auto align-items-center">
+                            <a href="" class="mx-1">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="36" viewBox="0 0 42 42" fill="none">
+                                <rect x="0.5" y="0.5" width="41" height="41" rx="7.5" fill="white" stroke="#D9D9D9" />
+                                <path
+                                  d="M14.8454 12H26.6816C27.1485 12 27.527 12.3731 27.527 12.8333V28.7861C27.527 29.0162 27.3377 29.2028 27.1043 29.2028C27.0249 29.2028 26.9471 29.1807 26.8798 29.1391L20.7635 25.3594L14.6473 29.1391C14.4495 29.2613 14.1886 29.2024 14.0646 29.0074C14.0224 28.9411 14 28.8644 14 28.7861V12.8333C14 12.3731 14.3785 12 14.8454 12ZM25.8362 13.6667H15.6909V26.527L20.7635 23.3923L25.8362 26.527V13.6667Z"
+                                  fill="#1E1E1E" />
+                              </svg>
+                            </a>
+          
+                            <a href="" class="d-flex mx-1 p-1 align-items-center border rounded">
+                              <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                                  <path
+                                    d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                                    fill="#FF6969" />
+                                </svg>
+                              </div>
+                              <div>
+                                <p class="m-1">221</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+          
+                        <!-- card text -->
+          
+                        <div class="card-text">
+                          <div class="d-flex text-center">
+                            <h5>Reforge</h5>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                              <path
+                                d="M8.0154 0.145629C6.61978 -0.30616 5.1026 0.322268 4.43518 1.62862L3.63281 3.19911C3.53748 3.38572 3.38572 3.53748 3.19911 3.63281L1.62862 4.43518C0.322268 5.1026 -0.30616 6.61978 0.145629 8.0154L0.68878 9.69327C0.753316 9.89262 0.753316 10.1073 0.68878 10.3067L0.145629 11.9845C-0.30616 13.3802 0.322268 14.8973 1.62862 15.5648L3.19911 16.3671C3.38572 16.4625 3.53748 16.6142 3.63281 16.8009L4.43518 18.3714C5.1026 19.6777 6.61978 20.3062 8.0154 19.8544L9.69327 19.3112C9.89262 19.2467 10.1073 19.2467 10.3067 19.3112L11.9845 19.8544C13.3802 20.3062 14.8973 19.6777 15.5648 18.3714L16.3671 16.8009C16.4625 16.6142 16.6142 16.4625 16.8009 16.3671L18.3714 15.5648C19.6777 14.8973 20.3062 13.3802 19.8544 11.9845L19.3112 10.3067C19.2467 10.1073 19.2467 9.89262 19.3112 9.69327L19.8544 8.0154C20.3062 6.61978 19.6777 5.1026 18.3714 4.43518L16.8009 3.63281C16.6142 3.53748 16.4625 3.38572 16.3671 3.19911L15.5648 1.62862C14.8973 0.322268 13.3802 -0.30616 11.9845 0.145629L10.3067 0.68878C10.1073 0.753306 9.89262 0.753316 9.69327 0.68878L8.0154 0.145629ZM4.78192 9.7583L6.19015 8.34998L9.00659 11.1665L14.6395 5.5336L16.0478 6.94183L9.00659 13.9829L4.78192 9.7583Z"
+                                fill="#1C92FF" />
+                            </svg>
+                          </div>
+                          <p>Are you looking to explore the world of artificial intelligence...</p>
+                        </div>
+                        <div class="card-button d-flex justify-content-between">
+                          <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                          <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+  <!-- popular plugins end -->
+  <!-- Futurrists Start -->
+  <!-- Futurrists Heading -->
+        <div class="container-lg d-flex justify-content-sm-between justify-content-evenly heading">
+          <h4>Top Picks by Futurrists<span class="text-secondary">(17)</span> </h4>
+          <a class="text-primary px-3 fw-bold" href="">See all</a>
+        </div>
+  <!-- Futurrists Cards -->
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="d-flex flex-wrap justify-content-around justify-content-sm-between container-lg">
+                      <div class="card futurrists-card my-3 rounded-4" style="max-width: 19rem ;">
+                        <div class="row row-cols-2 g-0">
+                          <div class="col">
+                            <img src="./img/Rectangle 17.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 67.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 20.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 68.jpg" class="card-img-top" alt="...">
+                          </div>
+                        </div>
+                        <div class="card-body px-2">
+                          <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-center">
+                              <div>
+                                <img src="./img/Ellipse 2.jpg" alt="">
+                              </div>
+                              <div class="mx-2">
+                                <h6>Robert A.</h6>
+                                <p>10 Frequently used Tools</p>
+                              </div>
+                            </div>
+                            <di v class="d-flex align-items-center">
+                              <div class="d-flex border px-2 py-1 rounded mx-1">
+                                <img src="./img/chat-4-line 1.jpg" alt="">
+                                <p class="px-1">115</p>
+                              </div>
+                              <div class="d-flex border px-2 py-1 rounded mx-1">
+                                <img src="./img/heart-3-fill 1.jpg" alt="">
+                                <p class="px-1">221</p>
+                              </div>
+                          </div>
+                          <div class="card-button d-flex justify-content-between pt-2">
+                            <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card futurrists-card my-3 rounded-4" style="max-width: 19rem ;">
+                        <div class="row row-cols-2 g-0">
+                          <div class="col">
+                            <img src="./img/Rectangle 17.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 67.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 20.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 68.jpg" class="card-img-top" alt="...">
+                          </div>
+                        </div>
+                        <div class="card-body px-2">
+                          <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-center">
+                              <div>
+                                <img src="./img/Ellipse 2.jpg" alt="">
+                              </div>
+                              <div class="mx-2">
+                                <h6>Robert A.</h6>
+                                <p>10 Frequently used Tools</p>
+                              </div>
+                            </div>
+                            <di v class="d-flex align-items-center">
+                              <div class="d-flex border px-2 py-1 rounded mx-1">
+                                <img src="./img/chat-4-line 1.jpg" alt="">
+                                <p class="px-1">115</p>
+                              </div>
+                              <div class="d-flex border px-2 py-1 rounded mx-1">
+                                <img src="./img/heart-3-fill 1.jpg" alt="">
+                                <p class="px-1">221</p>
+                              </div>
+                          </div>
+                          <div class="card-button d-flex justify-content-between pt-2">
+                            <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card futurrists-card my-3 rounded-4" style="max-width: 19rem ;">
+                        <div class="row row-cols-2 g-0">
+                          <div class="col">
+                            <img src="./img/Rectangle 17.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 67.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 20.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 68.jpg" class="card-img-top" alt="...">
+                          </div>
+                        </div>
+                        <div class="card-body px-2">
+                          <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-center">
+                              <div>
+                                <img src="./img/Ellipse 2.jpg" alt="">
+                              </div>
+                              <div class="mx-2">
+                                <h6>Robert A.</h6>
+                                <p>10 Frequently used Tools</p>
+                              </div>
+                            </div>
+                            <di v class="d-flex align-items-center">
+                              <div class="d-flex border px-2 py-1 rounded mx-1">
+                                <img src="./img/chat-4-line 1.jpg" alt="">
+                                <p class="px-1">115</p>
+                              </div>
+                              <div class="d-flex border px-2 py-1 rounded mx-1">
+                                <img src="./img/heart-3-fill 1.jpg" alt="">
+                                <p class="px-1">221</p>
+                              </div>
+                          </div>
+                          <div class="card-button d-flex justify-content-between pt-2">
+                            <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-flex flex-wrap justify-content-around justify-content-sm-between container-lg">
+                      <div class="card futurrists-card my-3 rounded-4" style="max-width: 19rem ;">
+                        <div class="row row-cols-2 g-0">
+                          <div class="col">
+                            <img src="./img/Rectangle 17.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 67.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 20.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 68.jpg" class="card-img-top" alt="...">
+                          </div>
+                        </div>
+                        <div class="card-body px-2">
+                          <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-center">
+                              <div>
+                                <img src="./img/Ellipse 2.jpg" alt="">
+                              </div>
+                              <div class="mx-2">
+                                <h6>Robert A.</h6>
+                                <p>10 Frequently used Tools</p>
+                              </div>
+                            </div>
+                            <di v class="d-flex align-items-center">
+                              <div class="d-flex border px-2 py-1 rounded mx-1">
+                                <img src="./img/chat-4-line 1.jpg" alt="">
+                                <p class="px-1">115</p>
+                              </div>
+                              <div class="d-flex border px-2 py-1 rounded mx-1">
+                                <img src="./img/heart-3-fill 1.jpg" alt="">
+                                <p class="px-1">221</p>
+                              </div>
+                          </div>
+                          <div class="card-button d-flex justify-content-between pt-2">
+                            <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card futurrists-card my-3 rounded-4" style="max-width: 19rem ;">
+                        <div class="row row-cols-2 g-0">
+                          <div class="col">
+                            <img src="./img/Rectangle 17.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 67.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 20.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 68.jpg" class="card-img-top" alt="...">
+                          </div>
+                        </div>
+                        <div class="card-body px-2">
+                          <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-center">
+                              <div>
+                                <img src="./img/Ellipse 2.jpg" alt="">
+                              </div>
+                              <div class="mx-2">
+                                <h6>Robert A.</h6>
+                                <p>10 Frequently used Tools</p>
+                              </div>
+                            </div>
+                            <di v class="d-flex align-items-center">
+                              <div class="d-flex border px-2 py-1 rounded mx-1">
+                                <img src="./img/chat-4-line 1.jpg" alt="">
+                                <p class="px-1">115</p>
+                              </div>
+                              <div class="d-flex border px-2 py-1 rounded mx-1">
+                                <img src="./img/heart-3-fill 1.jpg" alt="">
+                                <p class="px-1">221</p>
+                              </div>
+                          </div>
+                          <div class="card-button d-flex justify-content-between pt-2">
+                            <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card futurrists-card my-3 rounded-4" style="max-width: 19rem ;">
+                        <div class="row row-cols-2 g-0">
+                          <div class="col">
+                            <img src="./img/Rectangle 17.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 67.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 20.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 68.jpg" class="card-img-top" alt="...">
+                          </div>
+                        </div>
+                        <div class="card-body px-2">
+                          <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-center">
+                              <div>
+                                <img src="./img/Ellipse 2.jpg" alt="">
+                              </div>
+                              <div class="mx-2">
+                                <h6>Robert A.</h6>
+                                <p>10 Frequently used Tools</p>
+                              </div>
+                            </div>
+                            <di v class="d-flex align-items-center">
+                              <div class="d-flex border px-2 py-1 rounded mx-1">
+                                <img src="./img/chat-4-line 1.jpg" alt="">
+                                <p class="px-1">115</p>
+                              </div>
+                              <div class="d-flex border px-2 py-1 rounded mx-1">
+                                <img src="./img/heart-3-fill 1.jpg" alt="">
+                                <p class="px-1">221</p>
+                              </div>
+                          </div>
+                          <div class="card-button d-flex justify-content-between pt-2">
+                            <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-flex flex-wrap justify-content-around justify-content-sm-between container-lg">
+                      <div class="card futurrists-card my-3 rounded-4" style="max-width: 19rem ;">
+                        <div class="row row-cols-2 g-0">
+                          <div class="col">
+                            <img src="./img/Rectangle 17.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 67.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 20.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 68.jpg" class="card-img-top" alt="...">
+                          </div>
+                        </div>
+                        <div class="card-body px-2">
+                          <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-center">
+                              <div>
+                                <img src="./img/Ellipse 2.jpg" alt="">
+                              </div>
+                              <div class="mx-2">
+                                <h6>Robert A.</h6>
+                                <p>10 Frequently used Tools</p>
+                              </div>
+                            </div>
+                            <di v class="d-flex align-items-center">
+                              <div class="d-flex border px-2 py-1 rounded mx-1">
+                                <img src="./img/chat-4-line 1.jpg" alt="">
+                                <p class="px-1">115</p>
+                              </div>
+                              <div class="d-flex border px-2 py-1 rounded mx-1">
+                                <img src="./img/heart-3-fill 1.jpg" alt="">
+                                <p class="px-1">221</p>
+                              </div>
+                          </div>
+                          <div class="card-button d-flex justify-content-between pt-2">
+                            <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card futurrists-card my-3 rounded-4" style="max-width: 19rem ;">
+                        <div class="row row-cols-2 g-0">
+                          <div class="col">
+                            <img src="./img/Rectangle 17.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 67.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 20.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 68.jpg" class="card-img-top" alt="...">
+                          </div>
+                        </div>
+                        <div class="card-body px-2">
+                          <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-center">
+                              <div>
+                                <img src="./img/Ellipse 2.jpg" alt="">
+                              </div>
+                              <div class="mx-2">
+                                <h6>Robert A.</h6>
+                                <p>10 Frequently used Tools</p>
+                              </div>
+                            </div>
+                            <di v class="d-flex align-items-center">
+                              <div class="d-flex border px-2 py-1 rounded mx-1">
+                                <img src="./img/chat-4-line 1.jpg" alt="">
+                                <p class="px-1">115</p>
+                              </div>
+                              <div class="d-flex border px-2 py-1 rounded mx-1">
+                                <img src="./img/heart-3-fill 1.jpg" alt="">
+                                <p class="px-1">221</p>
+                              </div>
+                          </div>
+                          <div class="card-button d-flex justify-content-between pt-2">
+                            <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card futurrists-card my-3 rounded-4" style="max-width: 19rem ;">
+                        <div class="row row-cols-2 g-0">
+                          <div class="col">
+                            <img src="./img/Rectangle 17.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 67.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 20.jpg" class="card-img-top" alt="...">
+                          </div>
+                          <div class="col">
+                            <img src="./img/Rectangle 68.jpg" class="card-img-top" alt="...">
+                          </div>
+                        </div>
+                        <div class="card-body px-2">
+                          <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-center">
+                              <div>
+                                <img src="./img/Ellipse 2.jpg" alt="">
+                              </div>
+                              <div class="mx-2">
+                                <h6>Robert A.</h6>
+                                <p>10 Frequently used Tools</p>
+                              </div>
+                            </div>
+                            <di v class="d-flex align-items-center">
+                              <div class="d-flex border px-2 py-1 rounded mx-1">
+                                <img src="./img/chat-4-line 1.jpg" alt="">
+                                <p class="px-1">115</p>
+                              </div>
+                              <div class="d-flex border px-2 py-1 rounded mx-1">
+                                <img src="./img/heart-3-fill 1.jpg" alt="">
+                                <p class="px-1">221</p>
+                              </div>
+                          </div>
+                          <div class="card-button d-flex justify-content-between pt-2">
+                            <a href="#" class="btn border rounded-pill py-1 px-2 bg-black text-white">#Website</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#AI Assistant</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#Devlioment</a>
+                            <a href="#" class="btn border rounded-pill py-1 px-2">#Chatbot</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+  <!-- Futurrists End -->
+  <!-- AI News Start -->
+  <!-- AI News Heading -->
+      <div class="container-lg d-flex justify-content-sm-between justify-content-evenly px-3 heading">
+        <h4>Latest AI News</h4>
+        <a class="text-primary px-3 fw-bold" href="">Explore More</a>
+      </div>
+  <!-- AI News Cards -->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex flex-wrap justify-content-around justify-content-sm-between container-lg">
+                  <div class="card my-3" style="width: 19rem;">
+                    <img src="./img/Rectangle 73,,.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">US military needs AI vehicles, weapon systems to be 'superior' global force:
+                        experts</h5>
+                      <p class="card-text">Are you looking to explore the world of artificial intelligence...Are you looking to
+                        explore the world of...</p>
+                      <div class="d-flex justify-content-between align-items-center mt-1">
+                        <div>
+                          <img src="./img/external-link-line 1.png" class="bg-black px-3 py-1 rounded-pill" alt="">
+                        </div>
+                        <div class="d-flex">
+                          <div class="m-1">
+                            <img src="./img/share-line 1.png" class="p-2 border rounded" alt="">
+                          </div>
+                          <div class="m-1">
+                            <img src="./img/Group 39417.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card my-3" style="width: 19rem;">
+                    <img src="./img/Rectangle 73,,.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">US military needs AI vehicles, weapon systems to be 'superior' global force:
+                        experts</h5>
+                      <p class="card-text">Are you looking to explore the world of artificial intelligence...Are you looking to
+                        explore the world of...</p>
+                      <div class="d-flex justify-content-between align-items-center mt-1">
+                        <div>
+                          <img src="./img/external-link-line 1.png" class="bg-black px-3 py-1 rounded-pill" alt="">
+                        </div>
+                        <div class="d-flex">
+                          <div class="m-1">
+                            <img src="./img/share-line 1.png" class="p-2 border rounded" alt="">
+                          </div>
+                          <div class="m-1">
+                            <img src="./img/Group 39417.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card my-3" style="width: 19rem;">
+                    <img src="./img/Rectangle 73,,.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">US military needs AI vehicles, weapon systems to be 'superior' global force:
+                        experts</h5>
+                      <p class="card-text">Are you looking to explore the world of artificial intelligence...Are you looking to
+                        explore the world of...</p>
+                      <div class="d-flex justify-content-between align-items-center mt-1">
+                        <div>
+                          <img src="./img/external-link-line 1.png" class="bg-black px-3 py-1 rounded-pill" alt="">
+                        </div>
+                        <div class="d-flex">
+                          <div class="m-1">
+                            <img src="./img/share-line 1.png" class="p-2 border rounded" alt="">
+                          </div>
+                          <div class="m-1">
+                            <img src="./img/Group 39417.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex flex-wrap justify-content-around justify-content-sm-between container-lg">
+                  <div class="card my-3" style="width: 19rem;">
+                    <img src="./img/Rectangle 73,,.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">US military needs AI vehicles, weapon systems to be 'superior' global force:
+                        experts</h5>
+                      <p class="card-text">Are you looking to explore the world of artificial intelligence...Are you looking to
+                        explore the world of...</p>
+                      <div class="d-flex justify-content-between align-items-center mt-1">
+                        <div>
+                          <img src="./img/external-link-line 1.png" class="bg-black px-3 py-1 rounded-pill" alt="">
+                        </div>
+                        <div class="d-flex">
+                          <div class="m-1">
+                            <img src="./img/share-line 1.png" class="p-2 border rounded" alt="">
+                          </div>
+                          <div class="m-1">
+                            <img src="./img/Group 39417.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card my-3" style="width: 19rem;">
+                    <img src="./img/Rectangle 73,,.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">US military needs AI vehicles, weapon systems to be 'superior' global force:
+                        experts</h5>
+                      <p class="card-text">Are you looking to explore the world of artificial intelligence...Are you looking to
+                        explore the world of...</p>
+                      <div class="d-flex justify-content-between align-items-center mt-1">
+                        <div>
+                          <img src="./img/external-link-line 1.png" class="bg-black px-3 py-1 rounded-pill" alt="">
+                        </div>
+                        <div class="d-flex">
+                          <div class="m-1">
+                            <img src="./img/share-line 1.png" class="p-2 border rounded" alt="">
+                          </div>
+                          <div class="m-1">
+                            <img src="./img/Group 39417.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card my-3" style="width: 19rem;">
+                    <img src="./img/Rectangle 73,,.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">US military needs AI vehicles, weapon systems to be 'superior' global force:
+                        experts</h5>
+                      <p class="card-text">Are you looking to explore the world of artificial intelligence...Are you looking to
+                        explore the world of...</p>
+                      <div class="d-flex justify-content-between align-items-center mt-1">
+                        <div>
+                          <img src="./img/external-link-line 1.png" class="bg-black px-3 py-1 rounded-pill" alt="">
+                        </div>
+                        <div class="d-flex">
+                          <div class="m-1">
+                            <img src="./img/share-line 1.png" class="p-2 border rounded" alt="">
+                          </div>
+                          <div class="m-1">
+                            <img src="./img/Group 39417.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex flex-wrap justify-content-around justify-content-sm-between container-lg">
+                  <div class="card my-3" style="width: 19rem;">
+                    <img src="./img/Rectangle 73,,.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">US military needs AI vehicles, weapon systems to be 'superior' global force:
+                        experts</h5>
+                      <p class="card-text">Are you looking to explore the world of artificial intelligence...Are you looking to
+                        explore the world of...</p>
+                      <div class="d-flex justify-content-between align-items-center mt-1">
+                        <div>
+                          <img src="./img/external-link-line 1.png" class="bg-black px-3 py-1 rounded-pill" alt="">
+                        </div>
+                        <div class="d-flex">
+                          <div class="m-1">
+                            <img src="./img/share-line 1.png" class="p-2 border rounded" alt="">
+                          </div>
+                          <div class="m-1">
+                            <img src="./img/Group 39417.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card my-3" style="width: 19rem;">
+                    <img src="./img/Rectangle 73,,.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">US military needs AI vehicles, weapon systems to be 'superior' global force:
+                        experts</h5>
+                      <p class="card-text">Are you looking to explore the world of artificial intelligence...Are you looking to
+                        explore the world of...</p>
+                      <div class="d-flex justify-content-between align-items-center mt-1">
+                        <div>
+                          <img src="./img/external-link-line 1.png" class="bg-black px-3 py-1 rounded-pill" alt="">
+                        </div>
+                        <div class="d-flex">
+                          <div class="m-1">
+                            <img src="./img/share-line 1.png" class="p-2 border rounded" alt="">
+                          </div>
+                          <div class="m-1">
+                            <img src="./img/Group 39417.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card my-3" style="width: 19rem;">
+                    <img src="./img/Rectangle 73,,.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">US military needs AI vehicles, weapon systems to be 'superior' global force:
+                        experts</h5>
+                      <p class="card-text">Are you looking to explore the world of artificial intelligence...Are you looking to
+                        explore the world of...</p>
+                      <div class="d-flex justify-content-between align-items-center mt-1">
+                        <div>
+                          <img src="./img/external-link-line 1.png" class="bg-black px-3 py-1 rounded-pill" alt="">
+                        </div>
+                        <div class="d-flex">
+                          <div class="m-1">
+                            <img src="./img/share-line 1.png" class="p-2 border rounded" alt="">
+                          </div>
+                          <div class="m-1">
+                            <img src="./img/Group 39417.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+  <!-- AI News End -->
+  <!-- AI Event start -->
+  <!-- AI Event card heading -->
+  <div class="container-lg d-flex justify-content-sm-between justify-content-evenly px-3 heading">
+    <h4>Upcoming AI Event</h4>
+    <a class="text-primary px-3 fw-bold" href="">Explore More</a>
+  </div>
+  <!-- AI Event Cards -->
+  <div class="container-lg d-flex ai-event-card justify-content-sm-between justify-content-around flex-wrap mt-3">
+    <div class="card rounded-4 mb-3" style="max-width: 19rem;">
+      <div class="row g-0 m-0 p-1">
+        <div class="col-5">
+          <img src="./img/Rectangle 73.jpg" class="img-fluid main-img rounded-start" alt="">
+        </div>
+        <div class="col-7">
+          <div class="card-body pb-1 w-100">
+            <h5>The Software Architecture Gathering - Digital 2023</h5>
+            <p>
+              <img src="./img/Vector.jpg" class="img-fluid px-1" alt="">
+              November 27-30, 2023
+            </p>
+            <p>
+              <img src="./img/Vector-2.jpg" class="img-fluid px-1" alt="">
+              Boston, Massachussettes, USA
+            </p>
+            <div class="d-flex justify-content-between align-items-center mt-1">
+              <div>
+                <img src="./img/external-link-line 1.png" class="bg-black px-3 py-1 rounded-pill" alt="">
+              </div>
+              <div class="d-flex">
+                <div class="m-1">
+                  <img src="./img/share-line 1.png" class="p-2 border rounded" alt="">
+                </div>
+                <div class="m-1">
+                  <img src="./img/Group 39417.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+        </div>
+      </div>
+    </div>
+    <div class="card rounded-4 mb-3" style="max-width: 19rem;">
+      <div class="row g-0 m-0 p-1">
+        <div class="col-5">
+          <img src="./img/Rectangle 73-(1).jpg" class="img-fluid main-img rounded-start" alt="...">
+        </div>
+        <div class="col-7">
+          <div class="card-body pb-1 w-100">
+            <h5>The Software Architecture Gathering - Digital 2023</h5>
+            <p>
+              <img src="./img/Vector.jpg" class="img-fluid px-1" alt="">
+              November 27-30, 2023
+            </p>
+            <p>
+              <img src="./img/Vector-2.jpg" class="img-fluid px-1" alt="">
+              Boston, Massachussettes, USA
+            </p>
+            <div class="d-flex justify-content-between align-items-center mt-1">
+              <div>
+                <img src="./img/external-link-line 1.png" class="bg-black px-3 py-1 rounded-pill" alt="">
+              </div>
+              <div class="d-flex">
+                <div class="m-1">
+                  <img src="./img/share-line 1.png" class="p-2 border rounded" alt="">
+                </div>
+                <div class="m-1">
+                  <img src="./img/Group 39417.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+        </div>
+      </div>
+    </div>
+    <div class="card rounded-4 mb-3" style="max-width: 19rem;">
+      <div class="row g-0 m-0 p-1">
+        <div class="col-5">
+          <img src="./img/Rectangle 73-(2).jpg" class="img-fluid main-img rounded-start" alt="...">
+        </div>
+        <div class="col-7">
+          <div class="card-body pb-1 w-100">
+            <h5>The Software Architecture Gathering - Digital 2023</h5>
+            <p>
+              <img src="./img/Vector.jpg" class="img-fluid px-1" alt="">
+              November 27-30, 2023
+            </p>
+            <p>
+              <img src="./img/Vector-2.jpg" class="img-fluid px-1" alt="">
+              Boston, Massachussettes, USA
+            </p>
+            <div class="d-flex justify-content-between align-items-center mt-1">
+              <div>
+                <img src="./img/external-link-line 1.png" class="bg-black px-3 py-1 rounded-pill" alt="">
+              </div>
+              <div class="d-flex">
+                <div class="m-1">
+                  <img src="./img/share-line 1.png" class="p-2 border rounded" alt="">
+                </div>
+                <div class="m-1">
+                  <img src="./img/Group 39417.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- AI Event Card End -->
+  <!-- Cards End -->
+  <!-- AI Tools Start-->
+  <!-- AI Tools Heading -->
+  <div class="container-lg my-5 justify-content-sm-between justify-content-evenly px-3 heading">
+    <h3>Top 100 AI tools </h3>
+  </div>
+  <!-- AI Tools Cards -->
+  <div class="ai-tools">
+    <div class="container-lg d-flex flex-column flex-lg-row justify-content-between border p-2 rounded-4 my-5">
+      <div class="left d-flex align-items-center flex-wrap">
+        <div class="col-2 d-flex align-items-center">
+          <img src="./img/cup-star-svgrepo-com (1) 1.png" class="p-1" alt="">
+          <h3 class="pt-2 px-2">1.</h3>
+        </div>
+        <div class="col-5">
+          <img src="./img/Rectangle 37.png" class="rounded" alt="">
+        </div>
+        <div class="px-3 col-5">
+          <div class="d-flex align-items-center mt-3">
+            <h5 class="m-0">FutureTools.io</h5>
+          </div>
+          <p>General writing platform</p>
+        </div>
+      </div>
+      <div class="right d-flex my-3 align-items-center justify-content-around flex-wrap">
+        <div class="m-2">
+          <a href="" class="border me-auto rounded py-2 px-3 mx-2">Premium</a>
+        </div>
+        <div class="m-2">
+          <a href="" class="d-flex mx-1 p-1 align-items-center mx-2 border rounded">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                  fill="#FF6969"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="m-1">221</p>
+            </div>
+          </a>
+        </div>
+        <div class="m-2">
+          <a href="" class="bg-black px-3 py-2 rounded-pill mx-2 text-light">viewport</a>
+        </div>
+      </div>
+    </div>
+    <div class="container-lg d-flex flex-column flex-lg-row justify-content-between border p-2 rounded-4 my-5">
+      <div class="left d-flex align-items-center flex-wrap">
+        <div class="col-2 d-flex align-items-center">
+          <img src="./img/cup-star-svgrepo-com (1) 2.png" alt="">
+          <h3 class="pt-2 px-2">2.</h3>
+
+        </div>
+        <div class="col-5">
+          <img src="./img/Rectangle 32.png" class="rounded" alt="">
+        </div>
+        <div class="px-3 col-5">
+          <div class="d-flex align-items-center mt-3">
+            <h5 class="m-0">FutureTools.io</h5>
+          </div>
+          <p>General writing platform</p>
+        </div>
+      </div>
+      <div class="right d-flex my-3 align-items-center justify-content-around flex-wrap">
+        <div class="m-2">
+          <a href="" class="border me-auto rounded py-2 px-3 mx-2">Fremium</a>
+        </div>
+        <div class="m-2">
+          <a href="" class="border me-auto rounded py-2 px-3 mx-2">$15/mo.</a>
+        </div>
+        <div class="m-2">
+          <a href="" class="d-flex mx-1 p-1 align-items-center mx-2 border rounded">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                  fill="#FF6969"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="m-1">221</p>
+            </div>
+          </a>
+        </div>
+        <div class="m-2">
+          <a href="" class="bg-black px-3 py-2 rounded-pill mx-2 text-light">viewport</a>
+        </div>
+      </div>
+    </div>
+    <div class="container-lg d-flex flex-column flex-lg-row justify-content-between border p-2 rounded-4 my-5">
+      <div class="left d-flex align-items-center flex-wrap  ">
+        <div class="col-2 d-flex align-items-center">
+          <img src="./img/cup-star-svgrepo-com (1) 3.png" class="p-1" alt="">
+        <h3 class="pt-2 px-2">3.</h3>
+        </div>
+        <div class="col-5">
+          <img src="./img/Rectangle 37.png" class="rounded" alt="">
+        </div>
+        <div class="col-5">
+        <div class="px-3">
+          <div class="d-flex align-items-center mt-3">
+            <h5 class="m-0">FutureTools.io</h5>
+          </div>
+          <p>General writing platform</p>
+        </div>
+        </div>
+      </div>
+      <div class="right d-flex my-3 align-items-center justify-content-around flex-wrap">
+        <div class="m-2">
+          <a href="" class="border me-auto rounded py-2 px-3 mx-2">Premium</a>
+        </div>
+        <div class="m-2">
+          <a href="" class="d-flex mx-1 p-1 align-items-center mx-2 border rounded">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                  fill="#FF6969"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="m-1">221</p>
+            </div>
+          </a>
+        </div>
+        <div class="m-2">
+          <a href="" class="bg-black px-3 py-2 rounded-pill mx-2 text-light">viewport</a>
+        </div>
+      </div>
+    </div>
+    <div class="container-lg d-flex flex-column flex-lg-row justify-content-between border p-2 rounded-4 my-5">
+      <div class="left d-flex align-items-center flex-wrap">
+        <div class="col-2">
+        <h3 class="pt-2 px-2">4.</h3>
+        </div>
+        <div class="col-5">
+        <img src="./img/Rectangle 42.png" class="rounded" alt="">
+        </div>
+        <div class="col-5">
+          <div class="px-3">
+            <div class="d-flex align-items-center mt-3">
+              <h5 class="m-0">FutureTools.io</h5>
+            </div>
+            <p>General writing platform</p>
+          </div>
+        </div>
+      </div>
+      <div class="right d-flex my-3 align-items-center justify-content-around flex-wrap">
+        <div class="m-2">
+          <a href="" class="border me-auto rounded py-2 px-3 mx-2">Fremium</a>
+        </div>
+        <div class="m-2">
+          <a href="" class="border me-auto rounded py-2 px-3 mx-2">$15/mo.</a>
+        </div>
+        <div class="m-2">
+          <a href="" class="d-flex mx-1 p-1 align-items-center mx-2 border rounded">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                  fill="#FF6969"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="m-1">221</p>
+            </div>
+          </a>
+        </div>
+        <div class="m-2">
+          <a href="" class="bg-black px-3 py-2 rounded-pill mx-2 text-light">viewport</a>
+        </div>
+      </div>
+    </div>
+    <div class="container-lg d-flex flex-column flex-lg-row justify-content-between border p-2 rounded-4 my-5">
+      <div class="left d-flex align-items-center flex-wrap">
+        <div class="col-2">
+          <h3 class="pt-2 px-2">5.</h3>
+        </div>
+        <div class="col-5">
+          <img src="./img/Rectangle 47.png" class="rounded" alt="">
+        </div>
+        <div class="col-5">
+          <div class="px-3">
+            <div class="d-flex align-items-center mt-3">
+              <h5 class="m-0">FutureTools.io</h5>
+            </div>
+            <p>General writing platform</p>
+          </div>
+        </div>
+      </div>
+      <div class="right d-flex my-3 align-items-center justify-content-around flex-wrap">
+        <div class="m-2">
+          <a href="" class="border me-auto rounded py-2 px-3 mx-2">Premium</a>
+        </div>
+        <div class="m-2">
+          <a href="" class="d-flex mx-1 p-1 align-items-center mx-2 border rounded">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                  fill="#FF6969"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="m-1">221</p>
+            </div>
+          </a>
+        </div>
+        <div class="m-2">
+          <a href="" class="bg-black px-3 py-2 rounded-pill mx-2 text-light">viewport</a>
+        </div>
+      </div>
+    </div>
+    <div class="container-lg d-flex flex-column flex-lg-row justify-content-between border p-2 rounded-4 my-5">
+      <div class="left d-flex align-items-center flex-wrap">
+        <div class="col-2">
+          <h3 class="pt-2 px-2">6.</h3>
+        </div>
+
+        <div class="col-5">
+          <img src="./img/Rectangle 32.png" class="rounded" alt="">
+        </div>
+        <div class="col-5">
+          <div class="px-3">
+            <div class="d-flex align-items-center mt-3">
+              <h5 class="m-0">FutureTools.io</h5>
+            </div>
+            <p>General writing platform</p>
+          </div>
+        </div>
+      </div>
+      <div class="right d-flex my-3 align-items-center justify-content-around flex-wrap">
+        <div class="m-2">
+          <a href="" class="border me-auto rounded py-2 px-3 mx-2">Fremium</a>
+        </div>
+        <div class="m-2">
+          <a href="" class="border me-auto rounded py-2 px-3 mx-2">$15/mo.</a>
+        </div>
+        <div class="m-2">
+          <a href="" class="d-flex mx-1 p-1 align-items-center mx-2 border rounded">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                  fill="#FF6969"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="m-1">221</p>
+            </div>
+          </a>
+        </div>
+        <div class="m-2">
+          <a href="" class="bg-black px-3 py-2 rounded-pill mx-2 text-light">viewport</a>
+        </div>
+      </div>
+    </div>
+    <div class="container-lg d-flex flex-column flex-lg-row justify-content-between border p-2 rounded-4 my-5">
+      <div class="left d-flex align-items-center flex-wrap">
+        <div class="col-2">
+        <h3 class="pt-2 px-2">7.</h3>
+        </div>
+        <div class="col-5">
+        <img src="./img/Rectangle 42.png" class="rounded" alt="">
+        </div>
+        <div class="col-5">
+          <div class="px-3">
+            <div class="d-flex align-items-center mt-3">
+              <h5 class="m-0">FutureTools.io</h5>
+            </div>
+            <p>General writing platform</p>
+          </div>
+        </div>
+      </div>
+      <div class="right d-flex my-3 align-items-center justify-content-around flex-wrap">
+        <div class="m-2">
+          <a href="" class="border me-auto rounded py-2 px-3 mx-2">Fremium</a>
+        </div>
+        <div class="m-2">
+          <a href="" class="border me-auto rounded py-2 px-3 mx-2">$15/mo.</a>
+        </div>
+        <div class="m-2">
+          <a href="" class="d-flex mx-1 p-1 align-items-center mx-2 border rounded">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                  fill="#FF6969"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="m-1">221</p>
+            </div>
+          </a>
+        </div>
+        <div class="m-2">
+          <a href="" class="bg-black px-3 py-2 rounded-pill mx-2 text-light">viewport</a>
+        </div>
+      </div>
+    </div>
+    <div class="container-lg d-flex flex-column flex-lg-row justify-content-between border p-2 rounded-4 my-5">
+      <div class="left d-flex align-items-center flex-wrap">
+        <div class="col-2">
+          <h3 class="pt-2 px-2">8.</h3>
+        </div>
+        <div class="col-5">
+          <img src="./img/Rectangle 47.png" class="rounded" alt="">
+        </div>
+        <div class="col-5">
+          <div class="px-3">
+            <div class="d-flex align-items-center mt-3">
+              <h5 class="m-0">FutureTools.io</h5>
+            </div>
+            <p>General writing platform</p>
+          </div>
+        </div>
+      </div>
+      <div class="right d-flex my-3 align-items-center justify-content-around flex-wrap">
+        <div class="m-2">
+          <a href="" class="border me-auto rounded py-2 px-3 mx-2">Premium</a>
+        </div>
+        <div class="m-2">
+          <a href="" class="d-flex mx-1 p-1 align-items-center mx-2 border rounded">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                  fill="#FF6969"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="m-1">221</p>
+            </div>
+          </a>
+        </div>
+        <div class="m-2">
+          <a href="" class="bg-black px-3 py-2 rounded-pill mx-2 text-light">viewport</a>
+        </div>
+      </div>
+    </div>
+    <div class="container-lg d-flex flex-column flex-lg-row justify-content-between border p-2 rounded-4 my-5">
+      <div class="left d-flex align-items-center flex-wrap">
+        <div class="col-2 d-flex align-items-center">
+          <h3 class="pt-2 px-2">9.</h3>
+        </div>
+        <div class="col-5">
+          <img src="./img/Rectangle 37.png" class="rounded" alt="">
+        </div>
+        <div class="px-3 col-5">
+          <div class="d-flex align-items-center mt-3">
+            <h5 class="m-0">FutureTools.io</h5>
+          </div>
+          <p>General writing platform</p>
+        </div>
+      </div>
+      <div class="right d-flex my-3 align-items-center justify-content-around flex-wrap">
+        <div class="m-2">
+          <a href="" class="border me-auto rounded py-2 px-3 mx-2">Fremium</a>
+        </div>
+        <div class="m-2">
+          <a href="" class="border me-auto rounded py-2 px-3 mx-2">$15/mo.</a>
+        </div>
+        <div class="m-2">
+          <a href="" class="d-flex mx-1 p-1 align-items-center mx-2 border rounded">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                  fill="#FF6969"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="m-1">221</p>
+            </div>
+          </a>
+        </div>
+        <div class="m-2">
+          <a href="" class="bg-black px-3 py-2 rounded-pill mx-2 text-light">viewport</a>
+        </div>
+      </div>
+    </div>
+    <div class="container-lg d-flex flex-column flex-lg-row justify-content-between border p-2 rounded-4 my-5">
+      <div class="left d-flex align-items-center flex-wrap  ">
+        <div class="col-2 d-flex align-items-center">
+        <h3 class="pt-2 px-2">10.</h3>
+        </div>
+        <div class="col-5">
+          <img src="./img/Rectangle 37.png" class="rounded" alt="">
+        </div>
+        <div class="col-5">
+        <div class="px-3">
+          <div class="d-flex align-items-center mt-3">
+            <h5 class="m-0">FutureTools.io</h5>
+          </div>
+          <p>General writing platform</p>
+        </div>
+        </div>
+        
+      </div>
+      <div class="right d-flex my-3 align-items-center justify-content-around flex-wrap">
+        <div class="m-2">
+          <a href="" class="border me-auto rounded py-2 px-3 mx-2">Premium</a>
+        </div>
+        <div class="m-2">
+          <a href="" class="d-flex mx-1 p-1 align-items-center mx-2 border rounded">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M13.7503 2.5C16.2817 2.5 18.3337 4.58333 18.3337 7.5C18.3337 13.3333 12.0837 16.6667 10.0003 17.9167C7.91699 16.6667 1.66699 13.3333 1.66699 7.5C1.66699 4.58333 3.75033 2.5 6.25033 2.5C7.8003 2.5 9.16699 3.33333 10.0003 4.16667C10.8337 3.33333 12.2003 2.5 13.7503 2.5ZM10.7786 15.5032C11.5132 15.0404 12.1753 14.5796 12.7961 14.0858C15.2784 12.1108 16.667 9.95292 16.667 7.5C16.667 5.53397 15.3862 4.16667 13.7503 4.16667C12.8537 4.16667 11.8831 4.64092 11.1788 5.34518L10.0003 6.52369L8.82183 5.34518C8.11756 4.64092 7.14691 4.16667 6.25033 4.16667C4.63288 4.16667 3.33366 5.54708 3.33366 7.5C3.33366 9.95292 4.72222 12.1108 7.20461 14.0858C7.82533 14.5796 8.48741 15.0404 9.22208 15.5032C9.47083 15.6599 9.71791 15.8108 10.0003 15.9793C10.2827 15.8108 10.5298 15.6599 10.7786 15.5032Z"
+                  fill="#FF6969"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="m-1">221</p>
+            </div>
+          </a>
+        </div>
+        <div class="m-2">
+          <a href="" class="bg-black px-3 py-2 rounded-pill mx-2 text-light">viewport</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- AI Tools footer -->
+  <div class="text-center my-5">
+    <a href="" class="px-5 py-3 bg-black text-light rounded-pill">See more</a>
+  </div>
+  <!-- AI Tools End -->
+  <!-- Footert -->
+  <footer>
+    <div class="container-fluid align-items-center bg-black px-3 py-5">
+      <div class="footer container-lg text-light d-flex flex-column flex-lg-row justify-content-around">
+        <div class="foot-left">
+          <svg xmlns="http://www.w3.org/2000/svg" width="147" height="37" viewBox="0 0 147 37" fill="none">
+            <g clip-path="url(#clip0_0_277)">
+              <path
+                d="M0 12.0225C0 10.2695 1.46087 8.91283 3.21325 8.91283H4.67414C4.79042 8.91283 4.96564 8.91283 5.08275 8.96909C7.41981 4.1636 12.9693 0.828125 19.454 0.828125C25.9395 0.828125 31.489 4.1636 33.7678 8.91283H35.228C37.0393 8.91283 38.4412 10.3258 38.4412 12.0225V15.5838C38.4412 17.3368 36.9804 18.6934 35.228 18.6934H33.826C31.8394 22.7643 27.3995 25.8168 22.0252 26.5522V29.944C23.1348 30.5661 23.8947 31.6969 23.8947 33.0536C23.8947 35.0324 22.2586 36.6158 20.2139 36.6158C18.1692 36.6158 16.533 35.0324 16.533 33.0536C16.533 31.7531 17.2931 30.5661 18.4026 29.944V26.7218C12.3855 26.3256 7.36086 23.1597 5.19984 18.6934C5.08275 18.6934 4.90751 18.7496 4.79041 18.7496H3.33036C1.51901 18.7496 0.117096 17.3368 0.117096 15.6408V12.0225H0Z"
+                fill="#0047FF" />
+              <path d="M133.859 31.8987V31.5122H133.898V31.8987H133.859Z" fill="#000215" />
+              <path
+                d="M133.349 10.7954C134.272 10.7954 135.088 10.8709 135.797 11.0219L135.379 14.1553C134.608 13.9792 133.855 13.8911 133.121 13.8911C132.02 13.8911 130.995 14.1931 130.047 14.7971C129.11 15.4012 128.376 16.2379 127.845 17.3077C127.314 18.3647 127.048 19.5413 127.048 20.8375V31.8989H123.632V11.1729H126.441L126.82 14.967H126.972C127.769 13.5954 128.712 12.5572 129.8 11.8525C130.888 11.1478 132.071 10.7954 133.349 10.7954Z"
+                fill="white" />
+              <path
+                d="M119.82 10.7954C120.743 10.7954 121.559 10.8709 122.268 11.0219L121.85 14.1553C121.079 13.9792 120.326 13.8911 119.592 13.8911C118.491 13.8911 117.466 14.1931 116.517 14.7971C115.581 15.4012 114.848 16.2379 114.316 17.3077C113.785 18.3647 113.519 19.5413 113.519 20.8375V31.8989H110.103V11.1729H112.912L113.291 14.967H113.443C114.24 13.5954 115.183 12.5572 116.271 11.8525C117.359 11.1478 118.542 10.7954 119.82 10.7954Z"
+                fill="white" />
+              <path
+                d="M91.8294 11.1729V24.5183C91.8294 26.192 92.2026 27.4377 92.9492 28.2558C93.7083 29.0611 94.8786 29.4638 96.4601 29.4638C98.5982 29.4638 100.154 28.8724 101.129 27.6894C102.103 26.5065 102.59 24.6001 102.59 21.9699V11.1729H106.025V31.8988H103.216L102.723 29.1617H102.552C101.932 30.1559 101.053 30.9235 99.9141 31.4646C98.7753 32.0058 97.4532 32.2762 95.9477 32.2762C93.4425 32.2762 91.551 31.6786 90.2732 30.4831C89.0081 29.2876 88.3754 27.3748 88.3754 24.7448V11.1729H91.8294Z"
+                fill="white" />
+              <path
+                d="M84.0507 29.5017C84.4935 29.5017 85.0122 29.4577 85.607 29.3695C86.2016 29.2815 86.6507 29.1808 86.9544 29.0676V31.6725C86.6381 31.8108 86.1446 31.943 85.4741 32.0689C84.8162 32.2072 84.1457 32.2764 83.4624 32.2764C79.3884 32.2764 77.3514 30.1434 77.3514 25.8775V13.8157H74.4099V12.1923L77.3894 10.8333L78.7559 6.41626H80.7866V11.173H86.8025V13.8157H80.7866V25.7831C80.7866 26.9785 81.0711 27.8973 81.6405 28.539C82.2225 29.1808 83.0259 29.5017 84.0507 29.5017Z"
+                fill="white" />
+              <path
+                d="M58.8123 11.1729V24.5183C58.8123 26.192 59.1855 27.4377 59.9319 28.2558C60.6911 29.0611 61.8614 29.4638 63.4428 29.4638C65.5811 29.4638 67.1373 28.8724 68.1114 27.6894C69.0857 26.5065 69.5727 24.6001 69.5727 21.9699V11.1729H73.0077V31.8988H70.1991L69.7056 29.1617H69.5348C68.9148 30.1559 68.0355 30.9235 66.8969 31.4646C65.7582 32.0058 64.4361 32.2762 62.9304 32.2762C60.4254 32.2762 58.5339 31.6786 57.2561 30.4831C55.9908 29.2876 55.3583 27.3748 55.3583 24.7448V11.1729H58.8123Z"
+                fill="white" />
+              <path
+                d="M54.3167 13.8156H49.0598V31.8989H45.6438V13.8156H42V12.23L45.6438 11.0597V9.87049C45.6438 7.35369 46.1941 5.46608 47.2948 4.20767C48.4083 2.94927 50.1162 2.32007 52.4188 2.32007C53.7474 2.32007 55.0949 2.55287 56.4612 3.01848L55.5503 5.68001C54.3737 5.30249 53.3425 5.11373 52.4569 5.11373C51.3055 5.11373 50.4516 5.49125 49.8948 6.24629C49.3381 7.00134 49.0598 8.19682 49.0598 9.83275V11.1729H54.3167V13.8156Z"
+                fill="white" />
+              <path
+                d="M23.2352 9.84277H25.6304C26.7399 9.84277 27.675 10.747 27.675 11.8216V15.9486C27.675 17.0225 26.7399 17.9274 25.6304 17.9274H23.2352C22.1247 17.9274 21.1904 17.0225 21.1904 15.9486V11.8216C21.1904 10.747 22.0667 9.84277 23.2352 9.84277Z"
+                fill="#000215" />
+              <path
+                d="M13.0115 9.84277H15.4066C16.5162 9.84277 17.4514 10.747 17.4514 11.8216V15.9486C17.4514 17.0225 16.5162 17.9274 15.4066 17.9274H13.0115C11.9011 17.9274 10.9667 17.0225 10.9667 15.9486V11.8216C10.9667 10.747 11.9011 9.84277 13.0115 9.84277Z"
+                fill="#000215" />
+              <path
+                d="M145.5 12.7637C145.5 14.4116 144.157 15.7476 142.5 15.7476C140.843 15.7476 139.5 14.4116 139.5 12.7637C139.5 11.1157 140.843 9.77979 142.5 9.77979C144.157 9.77979 145.5 11.1157 145.5 12.7637Z"
+                fill="#000215" />
+              <path
+                d="M141.839 12.784H142.409C142.718 12.784 142.944 12.7236 143.086 12.6027C143.228 12.4819 143.299 12.3023 143.299 12.0641C143.299 11.8258 143.228 11.6523 143.083 11.5436C142.939 11.4331 142.706 11.3778 142.383 11.3778H141.839V12.784ZM141.839 13.188V14.7522H141.359V10.9661H142.409C142.881 10.9661 143.23 11.0558 143.456 11.2354C143.683 11.4132 143.797 11.6817 143.797 12.0408C143.797 12.5432 143.543 12.8816 143.034 13.0559L144.078 14.7522H143.518L142.596 13.188H141.839Z"
+                fill="white" />
+              <path
+                d="M142.5 15.9713C144.281 15.9713 145.725 14.5351 145.725 12.7636C145.725 10.992 144.281 9.55591 142.5 9.55591C140.719 9.55591 139.275 10.992 139.275 12.7636C139.275 14.5351 140.719 15.9713 142.5 15.9713Z"
+                stroke="white" stroke-width="0.3" />
+            </g>
+            <defs>
+              <clipPath id="clip0_0_277">
+                <rect width="147" height="35.8066" fill="white" transform="translate(0 0.828125)" />
+              </clipPath>
+            </defs>
+          </svg>
+          <p class="pt-2">Copyright © 2023 - Futurr™</p>
+        </div>
+        <div class="foot-mid w-50">
+          <p>Advertiser Disclosure: Futurr is committed to rigorous editorial standards to provide our users with
+            accurate and helpful content. To keep our site free, we may receive compensation when you click some links
+            on our site.</p>
+        </div>
+        <div class="foot-right">
+          <p>Don't miss out on the latest AI trends and news</p>
+          <div class="d-flex border-lighter rounded w-75 justify-content-between">
+            <input class="bg-black p-1 border-0 rounded" placeholder="Your Email" type="email">
+            <div class="bg-blue p-1 rounded">
+              <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23" fill="none">
+                  <path
+                    d="M0 12.6261H6V10.6261H0V1.47168C0 1.19554 0.22386 0.97168 0.5 0.97168C0.58425 0.97168 0.66714 0.99297 0.74096 1.03358L19.2034 11.188C19.4454 11.321 19.5337 11.6251 19.4006 11.867C19.3549 11.9501 19.2865 12.0185 19.2034 12.0642L0.74096 22.2185C0.499 22.3516 0.19497 22.2634 0.0618899 22.0214C0.0212899 21.9476 0 21.8647 0 21.7804V12.6261Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="border">
+      <div class="d-flex justify-content-between flex-column flex-lg-row my-5">
+        <div class="left d-flex justify-content-around flex-column flex-lg-row ">
+          <a href="" class="mx-2 text-white">Submit Tool</a>
+          <a href="" class="mx-2 text-white">Request a Feature</a>
+          <a href="" class="mx-2 text-white">Update Tool Request</a>
+        </div>
+        <div class="right d-flex justify-content-between flex-column flex-lg-row ">
+          <a href="" class="mx-2 text-white">Privacy Policy</a>
+          <a href="" class="mx-2 text-white">Terms of Services</a>
+          <a href="" class="mx-2 text-white">About Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
